@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <title>Fixed Map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <!--    1.1.  Include the reference to the Mapbox JavaScript here in the <head> of the page  -->
+      <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js'></script>
+    <!--    1.2 Include the reference to the Mapbox CSS here in the <head> of the page  -->
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        /* 1.4 Insert the CSS code here between the <style> tags */
+          body { margin-left:100px; margin-right:100px; padding:0; }
+          #map1, #map2, #map3 { position:relative; height:400px; width:100%;}
+          h1 { color: #0081A7; font-size: 30px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+          #title { color: black; text-align: center; margin-bottom:20px; font-size: 50px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+          h2 { text-align: center; margin-top: 0; font-size:40px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+          p { font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+          hr { border: 0; border-top: 2px solid #F07167; width: 70%;}
+        /* 2.5.2 Insert additional CSS code here between the <style> tags */
+
+    </style>
+  </head>
+
+  <body>
+        <!-- 1.3 Insert the div for the structure of the page here in the <body> of the page -->
+          <h1 id="title">Attractions on Barton Springs Road</h1>
+          <h2>Austin, Texas</h2>
+
+          <p id="intro">Barton Springs Road is a popular street just south of the Colorado River in Austin, Texas. Many popular restaurants and attractions are 
+            located off the road and the area experiences many visitors every day. Festivals and events such as Austin City Limits music festival and the Polar Bear Plunge.
+            This website gives a brief tour of must-see things on Barton Springs Road, including Zilker Park, Barton Springs, and the UMLAUF Sculpture Garden.
+          </p>
+          <hr>
+          <br>
+
+          <h1>Zilker Metro Park</h1>
+            <p>The first must-see is Zilker Metro Park, Austin's largest public space and city park at over 350 acres. There are sand volleyball courts, picnic tables, food trucks, a disc golf course
+              shady trees, and much more. Austin City Limits, ABC Kite Fest, and the Trail of Lights annual festivals are hosted here. The park is open almost year round, 5am to 10pm. It opened in 1917 
+              and was named after Andrew Zilker who donated the land.
+            </p>
+            <div id='map1'></div>
+          <hr>
+          <br>
+
+          <h1>Barton Springs Pool</h1>
+            <p>Barton Springs Pool is next on the list, just across the street from Zilker Park. This natural springs is filled by water from Edwards Aquifer at a cool 68 degrees. The Austin Blind Salamander
+              is endemic to Barton Springs and Barton Creek, adding to the fragile and diverse ecosystem of the springs. Many rules are in place about what visitors can bring into the park, such as limits on spray 
+              sunscreen and glass containers. Barton Springs Pool hosts the Polar Bear Plunge every New Year's Day that is highly attended, with participants earning free t-shirts. The pool has an admissions fee
+              that pays for the upkeep of the pool and lifeguard salaries, but there is a free swimming area right next to the maintained pool.
+            </p>
+            <div id='map2'></div>
+          <hr>
+          <br>
+          
+          <h1>UMLAUF Sculpture Garden</h1>
+            <p>UMLAUF Sculpture Garden is an outdoor museum filled with sculptures crafted by Charles Umlauf, a local sculptor and art professor who lived from 1911 to 1944. He and his wife owned a house overlooking Barton Springs Road
+              and built a studio on the land as well. In 1985 they donated the land to the City of Austin for the public to enjoy. The City aquired more land adjacent to the lot, and eventually built the Sculpture Garden museum 
+              to honor Umlauf's work and life. The garden is open to the public, with discounts for certain community members. The museum hosts events, such as UMLAUF After Dark, for people to attend and get to experience the museum 
+              in a new way. Many weddings and parties are hosted in the event space every month as well. 
+            </p>
+            <div id='map3'></div>
+          <br>
+          <br>
+          <br>
+
+        <script>
+            /* Insert the JavaScript within the <script> tags, within the body */
+            // 2.1 Start with the Mapbox access token
+               mapboxgl.accessToken = 'pk.eyJ1Ijoibm1hbjQiLCJhIjoiY21ueTI3NDRhMDhuMjJ5cHBmZ3doc21xZSJ9.miNgOPAy_B9ysX6vufqaxA';
+
+            // 2.2 Then initialize the first map
+              var map = new mapboxgl.Map({
+                container: 'map1',
+                style: 'mapbox://styles/mapbox/outdoors-v12',
+                center: [-97.77349601737386, 30.26743042479724],
+                zoom: 16
+              });
+
+            // 2.3 Add any other variables (such as popups and markers) to the first map
+              var popup = new mapboxgl.Popup()
+                .setText("Zilker Metro Park");
+              
+                var marker = new mapboxgl.Marker({color: '#0081A7'})
+                  .setLngLat([-97.77349601737386, 30.26743042479724])
+                  .setPopup(popup)
+                  .addTo(map);
+
+            // 2.4 Add arguments to disable the map interactivity here
+            // Disable drag and zoom handlers.
+              map.dragPan.disable();
+              map.scrollZoom.disable();
+              map.boxZoom.disable();
+              map.dragRotate.disable();
+              map.keyboard.disable();
+              map.doubleClickZoom.disable();
+              map.touchZoomRotate.disable();
+              map.touchZoomRotate.disableRotation();
+
+            // 2.5.3 Then initialize the 2nd map
+              var map2 = new mapboxgl.Map({
+                container: 'map2', // id of a div on your page, where the map will be inserted
+                style: 'mapbox://styles/mapbox/outdoors-v12', // stylesheet location
+                center: [-97.77118566413763, 30.26356689704823], // starting position [lng, lat] eg. [-122.6788, 45.5212]
+                zoom: 17 // starting zoom 
+              });
+
+            // 2.5.4 Add any other variables (such as markers) to the second map
+              var popup2 = new  mapboxgl.Popup()
+                .setText('Barton Springs Pool');
+
+              var marker2 = new  mapboxgl.Marker({color:'#0081A7'})
+                .setLngLat([-97.77118566413763, 30.26356689704823])
+                .setPopup(popup2)
+                .addTo(map2);
+
+            // 2.5.5 Add arguments to disable the second map's interactivity here
+              map2.dragPan.disable();
+              map2.scrollZoom.disable();
+              map2.boxZoom.disable();
+              map2.dragRotate.disable();
+              map2.keyboard.disable();
+              map2.doubleClickZoom.disable();
+              map2.touchZoomRotate.disable();
+              map2.touchZoomRotate.disableRotation();
+
+
+            // Initialize the 3nd map
+              var map3 = new mapboxgl.Map({
+                container: 'map3', // id of a div on your page, where the map will be inserted
+                style: 'mapbox://styles/mapbox/outdoors-v12', // stylesheet location
+                center: [-97.76617424862424, 30.263348736839188], // starting position [lng, lat] eg. [-122.6788, 45.5212]
+                zoom: 17 // starting zoom 
+              });
+
+            // 2.5.4 Add any other variables (such as markers) to the second map
+              var popup3 = new mapboxgl.Popup()
+                .setText('UMLAUF Sculpture Garden');
+
+              var marker3 = new mapboxgl.Marker({color:'#0081A7'})
+                .setLngLat([-97.76617424862424, 30.263348736839188])
+                .setPopup(popup3)
+                .addTo(map3);
+
+            // 2.5.5 Add arguments to disable the second map's interactivity here
+              map3.dragPan.disable();
+              map3.scrollZoom.disable();
+              map3.boxZoom.disable();
+              map3.dragRotate.disable();
+              map3.keyboard.disable();
+              map3.doubleClickZoom.disable();
+              map3.touchZoomRotate.disable();
+              map3.touchZoomRotate.disableRotation();
+
+              // 2.6 Change the map pointers
+              map.getCanvas().style.cursor = 'not-allowed';
+	            map2.getCanvas().style.cursor = 'not-allowed';
+              map3.getCanvas().style.cursor = 'not-allowed';
+
+        </script>
+  </body>
+</html>
