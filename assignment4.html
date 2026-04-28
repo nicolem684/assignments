@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>University of Oregon Mapping - Assignment 4a</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    // Reference to Mapbox JavaScript
+     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.js'></script>
+
+    // Reference to Mapbox CSS 
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.20.0/mapbox-gl.css' rel='stylesheet' />
+
+    // Additional CSS
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+  </head>
+
+  <body>
+    // Map div
+    <div id='map'></div>
+
+    // JavaScript 
+    <script> 
+      // Mapbox access token
+        mapboxgl.accessToken = 'pk.eyJ1Ijoibm1hbjQiLCJhIjoiY21uZjZtM3VpMDc2cDJ4b2g3Z3ZyaGt5MSJ9.gkzJyjNAOfJNmCPL5mVG2Q';
+   
+      // Initializing the map
+        var map = new mapboxgl.Map({
+          container: 'map', // id of a div on your page, where the map will be inserted
+          style: 'mapbox://styles/nman4/cmohpyzol000001swej76czgl', // stylesheet location
+          center: [-97.534, 38.794], // starting position [lng, lat] eg. [-122.6788, 45.5212]
+          zoom: 3.7 // starting zoom 
+        });
+
+      // Zoom contols
+        map.addControl(new mapboxgl.NavigationControl({
+          showCompass: false
+        }), 'bottom-left'); 
+    </script>
+  </body>
+</html>
