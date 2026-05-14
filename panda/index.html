@@ -9,7 +9,7 @@
         <!-- Mapbox CSS reference -->
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css' rel='stylesheet' />
         <!-- CSS Links -->
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="pandasstyles.css"/>
     </head>
     <body>
         <header>
@@ -22,8 +22,21 @@
                 <p>This is an aside.</p>
             </aside>
         </div>
-        <div class="map">
-            <iframe width='100%' height='400px' src="https://api.mapbox.com/styles/v1/nman4/cmom1azlf003n01soadh5fl99.html?title=false&access_token=pk.eyJ1Ijoibm1hbjQiLCJhIjoiY21uZjZtM3VpMDc2cDJ4b2g3Z3ZyaGt5MSJ9.gkzJyjNAOfJNmCPL5mVG2Q&zoomwheel=false#2/38/-34" title="Pandas" style="border:none;"></iframe>
+        <div id="visual">
+            <div id="sidebar">
+                <p>This is a sidebar.</p>
+            </div>
+            <div id="map"></div>
         </div>
+        <script>
+            mapboxgl.accessToken = "pk.eyJ1Ijoibm1hbjQiLCJhIjoiY21wNXpycG5uMGdnNDJxbzhrYzF3cXhtZyJ9.FU0wGPTgG5sgUMMBkGRXXA";
+
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/nman4/cmom1azlf003n01soadh5fl99',
+                center: [0,0],
+                zoom: 1.4
+            })
+        </script>
     </body>
 </html>
