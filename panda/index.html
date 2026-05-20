@@ -23,17 +23,40 @@
             <h1>Pandanomics</h1>
             <h2>Here is just a small snippet of filler text to test out what the font looks like.</h2>
         </header>
-        <div class="intro">
-            <article>
-                <p>This is an article.</p>
-            </article>
+
+        <div id="main">
+            <section id="intro">
+                <article id="introText">
+                    <p>This is an article.</p>
+                </article>
+            </section>
+
+            <section id="content">
+                <section id="sidebar">
+                    <h1 id="zooName">Zoo Name</h1>
+                    <h2 id="country">County</h2>
+                    <article id="generalInfo">General Info</article>
+                    <div id="timeline">
+                        <p>Timeline</p>
+                    </div>
+                    <div class="panda" id="panda1">
+                        <p class="pandaName" id="pandaName1">Panda 1</p>
+                    </div>
+                    <div class="panda" id="panda2">
+                        <p class="pandaName" id="pandaName2">Panda 1</p>
+                    </div>
+                    <div class="panda" id="panda3">
+                        <p class="pandaName" id="pandaName3">Panda 1</p>
+                    </div>
+                    <div class="panda" id="panda4">
+                        <p class="pandaName" id="pandaName4">Panda 1</p>
+                    </div>
+                </section>
+
+                <div id="map"></div>
+            </section>
         </div>
-        <div id="visual">
-            <div id="sidebar">
-                <p>This is a sidebar.</p>
-            </div>
-            <div id="map"></div>
-        </div>
+
         <script>
             mapboxgl.accessToken = "pk.eyJ1Ijoibm1hbjQiLCJhIjoiY21wNXpycG5uMGdnNDJxbzhrYzF3cXhtZyJ9.FU0wGPTgG5sgUMMBkGRXXA";
 
