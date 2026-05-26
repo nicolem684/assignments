@@ -5,9 +5,9 @@
         <title>Pandanomics</title>
         <meta name="viewport" content="initial-scale=1, maxium-scale=1, user-scalable=no" />
         <!-- Mapbox JavaScript reference -->
-        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js'></script>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.9.0/mapbox-gl.js'></script>
         <!-- Mapbox CSS reference -->
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css' rel='stylesheet' />
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.9.0/mapbox-gl.css' rel='stylesheet' />
         <!-- CSS Links -->
         <link rel="stylesheet" href="styles.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,19 +22,22 @@
         <header>
             <h1>Pandanomics</h1>
             <h2>Here is just a small snippet of filler text to test out what the font looks like.</h2>
+            <hr>
         </header>
 
         <div id="main">
             <section id="intro">
                 <article id="introText">
-                    <p>This is an article.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </article>
             </section>
+
+            <br>
 
             <section id="content">
                 <section id="sidebar">
                     <h1 id="zooName">Zoo Name</h1>
-                    <h2 id="country">County</h2>
+                    <h2 id="country">Country</h2>
                     <article id="generalInfo">General Info</article>
                     <div id="timeline">
                         <p>Timeline</p>
@@ -43,13 +46,13 @@
                         <p class="pandaName" id="pandaName1">Panda 1</p>
                     </div>
                     <div class="panda" id="panda2">
-                        <p class="pandaName" id="pandaName2">Panda 1</p>
+                        <p class="pandaName" id="pandaName2">Panda 2</p>
                     </div>
                     <div class="panda" id="panda3">
-                        <p class="pandaName" id="pandaName3">Panda 1</p>
+                        <p class="pandaName" id="pandaName3">Panda 3</p>
                     </div>
                     <div class="panda" id="panda4">
-                        <p class="pandaName" id="pandaName4">Panda 1</p>
+                        <p class="pandaName" id="pandaName4">Panda 4</p>
                     </div>
                 </section>
 
@@ -57,15 +60,43 @@
             </section>
         </div>
 
+        <footer></footer>
+
         <script>
             mapboxgl.accessToken = "pk.eyJ1Ijoibm1hbjQiLCJhIjoiY21wNXpycG5uMGdnNDJxbzhrYzF3cXhtZyJ9.FU0wGPTgG5sgUMMBkGRXXA";
 
             var map = new mapboxgl.Map({
                 container: 'map',
                 style: 'mapbox://styles/nman4/cmom1azlf003n01soadh5fl99',
-                center: [0,0],
-                zoom: 1.4
+                center: [10,0],
+                zoom: .8
             })
+
+
+            // Listen for clicks on the points layer
+            map.on('click', 'panda-locations', (e) => {
+                if (e.features && e.features.length > 0) {
+                    const feature = e.features[0];
+                    console.log('Feature clicked:', feature.properties.Zoo);
+                    document.getElementById("zooName").innerHTML = feature.properties.Zoo;
+                }
+            });
+
+            // map.addInteraction('my-interaction', {
+            // type: 'click',
+            // target: { layerId: 'panda-locations' },
+            // handler: (e) => {
+            //     console.log(e)
+            //     map.setFeatureState(e.feature, {highlight: true});
+            //     document.getElementById("zooName").innerHTML = e.properties.zoo;
+
+            //     // go find a value in spreadsheet based on this ID
+            //     document.getElementById("zooName").innerHTML = spreadsheet value
+
+            // }
+            // });
+
+
         </script>
     </body>
 </html>
