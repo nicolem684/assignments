@@ -72,14 +72,17 @@
                     const response = await fetch('pandaData.json');
                     pandaDataFetch = await response.json();
                     console.log('JSON Data Loaded successfully');
+
+                    enableMapInteractions();
                 } catch (error) {
                     console.error('"Failed to load JSON file:', error);
                 }
             }
             initializeData();
 
-            // Listen for clicks on the points layer
-            map.on('click', 'panda-locations', async(e) => {
+            function enableMapInteractions() {
+                // Listen for clicks on the points layer
+                map.on('click', 'panda-locations', async(e) => {
                 if (e.features && e.features.length > 0) {
                     const clickedZoo = e.features[0].properties.Zoo;
                     
@@ -90,13 +93,14 @@
                     if (matchedZoo) {
                         document.getElementById('zooName').textContent = matchedZoo.zoo;
                         document.getElementById('country').textContent = matchedZoo.country;
-                        document.getElementById('generalInfo').textContent = matchedZoo.generalinfo;
-                        
+                        document.getElementById('generalInfo').textContent = matchedZoo.general_info;
                     } else {
                         console.warn('No data found in JSON matching: "${clickedZoo}"');
                     }
                 }
             });
+            }
+            
 
         </script>
     </body>
