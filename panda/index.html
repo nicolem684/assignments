@@ -119,16 +119,29 @@
                         
                         const columns = parseCSVRow(rows[i]);
                         if (!columns[zooIndex]) continue;
-
+                    
                         const currentZooName = columns[zooIndex];
-
-                        // Check if this row matches the clicked Mapbox map point
-                        if (currentZooName.toLowerCase() === targetZooName.trim().toLowerCase()) {
+                    
+                        // Helper to sanitize text: converts to lowercase, removes curly quotes, punctuation, and extra spaces
+                        const cleanStr = (str) => {
+                            return str
+                                .toLowerCase()
+                                .replace(/[’’‘’]/g, "'") // Convert curly apostrophes to straight ones
+                                .replace(/[^a-z0-9 ]/g, "") // Strip out any other non-alphanumeric characters
+                                .replace(/\s+/g, " ") // Collapse multiple spaces into one
+                                .trim();
+                        };
+                    
+                        const sanitizedCSVName = cleanStr(currentZooName);
+                        const sanitizedMapName = cleanStr(targetZooName);
+                    
+                        // Check if the names match or if one is contained within the other
+                        if (sanitizedCSVName === sanitizedMapName || sanitizedCSVName.includes(sanitizedMapName) || sanitizedMapName.includes(sanitizedCSVName)) {
                             const countryValue = columns[countryIndex] || "Unknown Country";
-
+                    
                             // Update the HTML text content
-                            document.getElementById("csv-zooName").textContent = currentZooName;
-                            document.getElementById("csv-country").textContent = countryValue;
+                            document.getElementById('csv-zooName').textContent = currentZooName;
+                            document.getElementById('csv-country').textContent = countryValue;
                             
                             foundMatch = true;
                             break; // Stop looking once found
