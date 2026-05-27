@@ -90,6 +90,8 @@
                     if (matchedZoo) {
                         document.getElementById('zooName').textContent = matchedZoo.zoo;
                         document.getElementById('country').textContent = matchedZoo.country;
+                        document.getElementById('generalInfo').textContent = matchedZoo.generalinfo;
+                        
                     } else {
                         console.warn('No data found in JSON matching: "${clickedZoo}"');
                     }
