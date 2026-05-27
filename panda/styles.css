@@ -78,9 +78,16 @@ h2 {
 
 #zooName {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3em;
+    font-size: 1em;
     font-weight: 400;
     text-align: center;
 }
 
+#country {
+    font-size: 1em;
+}
+
+#generalInfo {
+    font-size: 1em;
+}
 
