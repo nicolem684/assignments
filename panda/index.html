@@ -14,7 +14,7 @@
     <body>
         <header>
             <h1>Pandanomics</h1>
-            <h2>Here is just a small snippet of filler text to test out what the font looks like.</h2>
+            <h2>Here is just a small snippet of filler text to test out what the font looks like. Updated!</h2>
             <hr>
         </header>
 
@@ -91,9 +91,9 @@
                     const matchedZoo = pandaDataFetch.find(item => item.ZOO === clickedZoo);
 
                     if (matchedZoo) {
-                        document.getElementById('zooName').textContent = matchedZoo.zoo;
-                        document.getElementById('country').textContent = matchedZoo.country;
-                        document.getElementById('generalInfo').textContent = matchedZoo.general_info;
+                        document.getElementById('zooName').textContent = matchedZoo.ZOO;
+                        document.getElementById('country').textContent = matchedZoo.COUNTRY;
+                        document.getElementById('generalInfo').textContent = matchedZoo.GENERAL_INFO;
                     } else {
                         console.warn('No data found in JSON matching: "${clickedZoo}"');
                     }
