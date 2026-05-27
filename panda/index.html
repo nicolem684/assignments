@@ -103,8 +103,8 @@
 
                     // Identify index positions safely based on headers
                     const headers = parseCSVRow(rows[0]).map(h => h.toLowerCase());
-                    const zooIndex = headers.indexOf('zoo');
-                    const countryIndex = headers.indexOf('country');
+                    const zooIndex = headers.indexOf("zoo");
+                    const countryIndex = headers.indexOf("country");
 
                     if (zooIndex === -1 || countryIndex === -1) {
                         console.error("Could not find matching 'Zoo' or 'Country' headers in your CSV columns. Found headers:", headers);
@@ -127,8 +127,8 @@
                             const countryValue = columns[countryIndex] || "Unknown Country";
 
                             // Update the HTML text content
-                            document.getElementById('csv-zooName').textContent = currentZooName;
-                            document.getElementById('csv-country').textContent = countryValue;
+                            document.getElementById("csv-zooName").textContent = currentZooName;
+                            document.getElementById("csv-country").textContent = countryValue;
                             
                             foundMatch = true;
                             break; // Stop looking once found
