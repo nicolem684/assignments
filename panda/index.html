@@ -4,16 +4,9 @@
         <meta charset="utf-8" />
         <title>Pandanomics</title>
         <meta name="viewport" content="initial-scale=1, maxium-scale=1, user-scalable=no" />
-        <!-- Mapbox JavaScript reference -->
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.9.0/mapbox-gl.js'></script>
-        <!-- Mapbox CSS reference -->
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.9.0/mapbox-gl.css' rel='stylesheet' />
-        <!-- CSS Links -->
         <link rel="stylesheet" href="styles.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=MedievalSharp&family=Oregano:ital@0;1&family=Story+Script&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=MedievalSharp&family=Oregano:ital@0;1&family=Story+Script&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -28,7 +21,7 @@
         <div id="main">
             <section id="intro">
                 <article id="introText">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </article>
             </section>
 
@@ -36,8 +29,8 @@
 
             <section id="content">
                 <section id="sidebar">
-                    <h1 id="zooName">Zoo Name</h1>
-                    <h2 id="country">Country</h2>
+                    <h1 id="csv-zooName">Zoo Name</h1>
+                    <h2 id="csv-country">Country</h2>
                     <article id="generalInfo">General Info</article>
                     <div id="timeline">
                         <p>Timeline</p>
@@ -70,34 +63,86 @@
                 style: 'mapbox://styles/nman4/cmom1azlf003n01soadh5fl99',
                 center: [10,0],
                 zoom: .8
-            })
-
+            });
 
             // Listen for clicks on the points layer
-            map.on('click', 'panda-locations', (e) => {
+            map.on('click', 'panda-locations', async(e) => {
                 if (e.features && e.features.length > 0) {
                     const feature = e.features[0];
-                    console.log('Feature clicked:', feature.properties.Zoo);
-                    document.getElementById("zooName").innerHTML = feature.properties.Zoo;
-                    document.getElementById("country").innerHTML = feature.properties.Country;
+
+                    // Grab the zoo name property from the Mapbox feature click event
+                    const clickedZoo = feature.properties.Zoo || feature.properties.zoo || feature.properties.Name;
+                    console.log('Feature clicked:', clickedZoo);
+
+                    if (clickedZoo) {
+                        await loadCSV(clickedZoo);
+                    } else {
+                        console.error("Could not find a 'Zoo' property on the clicked map feature. Check your Mapbox studio property names.");
+                    }
                 }
             });
 
-            // map.addInteraction('my-interaction', {
-            // type: 'click',
-            // target: { layerId: 'panda-locations' },
-            // handler: (e) => {
-            //     console.log(e)
-            //     map.setFeatureState(e.feature, {highlight: true});
-            //     document.getElementById("zooName").innerHTML = e.properties.zoo;
+            // Change cursor to pointer when hovering over data layer
+            map.on('mouseenter', 'panda-locations', () => { map.getCanvas().style.cursor = 'pointer'; });
+            map.on('mouseleave', 'panda-locations', () => { map.getCanvas().style.cursor = ''; });
 
-            //     // go find a value in spreadsheet based on this ID
-            //     document.getElementById("zooName").innerHTML = spreadsheet value
+            // Helper function to safely parse CSV rows considering quotation marks
+            function parseCSVRow(rowText) {
+                // Regex matches commas outside of quotation marks
+                const matches = rowText.match(/(".*?"|[^",\s]+)(?=\s*,|\s*$)/g) || rowText.split(',');
+                return matches.map(val => val.replace(/^"|"$/g, '').trim());
+            }
 
-            // }
-            // });
+            async function loadCSV(targetZooName) {
+                try {
+                    const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4Qnv-0lO-seji1VaNIzQYa_bViKMrKSzT9YvDgePJiNUxEqysWgVt9LsdAK19AsMMBDBSUEY5xndp/pub?gid=1155525306&single=true&output=csv');
+                    const csvText = await response.text();
 
+                    // Split text into rows while removing hidden carriage returns (\r)
+                    const rows = csvText.replace(/\r/g, "").split("\n");
 
+                    // Identify index positions safely based on headers
+                    const headers = parseCSVRow(rows[0]).map(h => h.toLowerCase());
+                    const zooIndex = headers.indexOf('zoo');
+                    const countryIndex = headers.indexOf('country');
+
+                    if (zooIndex === -1 || countryIndex === -1) {
+                        console.error("Could not find matching 'Zoo' or 'Country' headers in your CSV columns. Found headers:", headers);
+                        return;
+                    }
+
+                    let foundMatch = false;
+
+                    // Loop through data rows (skipping the header row)
+                    for (let i = 1; i < rows.length; i++) {
+                        if (!rows[i].trim()) continue; // Skip empty lines
+                        
+                        const columns = parseCSVRow(rows[i]);
+                        if (!columns[zooIndex]) continue;
+
+                        const currentZooName = columns[zooIndex];
+
+                        // Check if this row matches the clicked Mapbox map point
+                        if (currentZooName.toLowerCase() === targetZooName.trim().toLowerCase()) {
+                            const countryValue = columns[countryIndex] || "Unknown Country";
+
+                            // Update the HTML text content
+                            document.getElementById('csv-zooName').textContent = currentZooName;
+                            document.getElementById('csv-country').textContent = countryValue;
+                            
+                            foundMatch = true;
+                            break; // Stop looking once found
+                        }
+                    }
+
+                    if (!foundMatch) {
+                        console.warn(`No matching data found in CSV for zoo name: "${targetZooName}"`);
+                    }
+                }
+                catch (error) {
+                    console.error('Error loading or processing CSV:', error);
+                }
+            }
         </script>
     </body>
 </html>
