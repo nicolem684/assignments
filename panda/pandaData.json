@@ -2,7 +2,7 @@
   {
     "ZOO": "San Diego Zoo",
     "COUNTRY": "USA",
-    "GENERAL_INFO": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "GENERAL_INFO": "The San Diego Zoo is currently home to two pandas, Yun Chuan and Xin Bao. These pandas arrived in June of 2024 after the US and China got on friendly terms again around 2023. To host the pandas, the San Diego Zoo pays roughly 2.8 million USD every year to fund the conservation program, including the annual 1 million USD fee paid to China in exchange for the pandas. ",
     "NUM_PANDAS": "2",
     "NAME_1": "Yun Chuan",
     "NICKNAME_1": "",
@@ -36,7 +36,7 @@
   {
     "ZOO": "Smithsonian's National Zoological Park",
     "COUNTRY": "USA",
-    "GENERAL_INFO": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "GENERAL_INFO": "The Smithsonian’s National Zoological Park is currently home to two pandas, Bao Li and Qing Bao. This zoo has housed pandas for over 50 nearly consecutive years, a symbol of the US and China’s friendship. When the loan for the previous pandas expired in November 2023, China was not quick to renew the loan, likely a sign of geopolitical tension between the US and China around that time. China soon presented a new loan and Bao Li and Qing Bao came to live at the Smithsonian Zoo for the next roughly ten years.",
     "NUM_PANDAS": "2",
     "NAME_1": "Bao Li",
     "NICKNAME_1": "",
@@ -70,7 +70,7 @@
   {
     "ZOO": "Chapultepec Zoo",
     "COUNTRY": "Mexico",
-    "GENERAL_INFO": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "GENERAL_INFO": "Chapultepec Zoo is the only zoo to house a panda that is not owned by China. Pandas were given to Mexico as a goodwill gift when vice-premier Chen Yuachi visited the country in 1975, long before the stipulation that every panda is legally owned by China. Xin Xin, this Mexico-owned panda, is over 35 years old, greatly surpassing the 15 year average lifetime of a panda in the wild. Once Xin Xin sadly passes, it is unlikely that Mexico will house pandas again soon as the current President has expressed unwillingess to pay China the steep annual fee.",
     "NUM_PANDAS": "1",
     "NAME_1": "Xin Xin",
     "NICKNAME_1": "",
@@ -104,7 +104,7 @@
   {
     "ZOO": "Zoo Madrid",
     "COUNTRY": "Spain",
-    "GENERAL_INFO": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "GENERAL_INFO": "Zoo Madrid is home to two pandas, Jin Xi and Zhu Yu. The first pandas came to Spain in 1978 as gifts to Queen Sofia, who expressed great interest in pandas and was a strong advocate for the breeding program in Madrid. Spain became the first country in the West to breed and birth a panda via artificial insemination. China has continued to offer loans to Spain, with Chinese Ambassador Lyu Fan to Spain stating that “giant pandas are the messengers of China’s friendship to the world.” (Source: China Daily)",
     "NUM_PANDAS": "2",
     "NAME_1": "Jin Xi",
     "NICKNAME_1": "",
@@ -138,7 +138,7 @@
   {
     "ZOO": "ZooParc de Beauval",
     "COUNTRY": "France",
-    "GENERAL_INFO": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "GENERAL_INFO": "ZooParc de Beauval is currently home to two pandas and is already set to house two more once the current loan ends. Yuan Dudu and Huan Lili, France’s current pandas, were birthed at the zoo to parents Huan Huan and Yuan Zi who lived at the zoo for over 13 years before recently returning to China. The parents were the first pandas China ever loaned to France, following five years of negotiation and deliberation between the two countries prior to reaching the agreement.",
     "NUM_PANDAS": "2",
     "NAME_1": "Yuan Dudu",
     "NICKNAME_1": "",
