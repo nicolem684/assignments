@@ -63,10 +63,10 @@ hr {
 /* Fonts */
 
 
-.lemonada-Regular {
+.lemonada-regular {
   font-family: "Lemonada", cursive;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
 }
 
