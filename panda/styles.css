@@ -94,7 +94,7 @@ h2 {
     font-size: 2.5em;
 }
 
-#zooName, #country, #generalInfo {
+#zooName, #country {
     font-family: "Elms Sans", sans-serif;
     font-weight: 400;
     text-align: center;
