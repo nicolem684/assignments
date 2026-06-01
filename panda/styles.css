@@ -78,6 +78,7 @@ hr {
   font-style: normal;
 }
 
+
 /* Typography */
 h1 {
     font-family: "Lemonada", cursive;
@@ -94,11 +95,18 @@ h2 {
     font-size: 2.5em;
 }
 
-#zooName, #country {
+#zooName {
     font-family: "Elms Sans", sans-serif;
     font-weight: 400;
     text-align: center;
-    font-size: 1em;
+    font-size: 2em;
+}
+    
+#country {
+    font-family: "Elms Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 p, #generalInfo {
