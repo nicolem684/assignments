@@ -91,28 +91,17 @@ h2 {
     font-family: "Elms Sans", sans-serif;
     font-weight: 400;
     text-align: center;
+    font-size: 2.5em;
 }
 
-#zooName {
+#zooName, #country, #generalInfo {
     font-family: "Elms Sans", sans-serif;
     font-weight: 400;
-    font-size: 1em;
     text-align: center;
-}
-
-#country {
     font-size: 1em;
-    font-family: "Elms Sans", sans-serif;
-    font-weight: 400;
 }
 
-#generalInfo {
-    font-size: 1em;
-    font-family: "Elms Sans", sans-serif;
-    font-weight: 400;
-}
-
-#p {
+p, #generalInfo {
     font-size: 1em;
     font-family: "Elms Sans", sans-serif;
     font-weight: 400;
