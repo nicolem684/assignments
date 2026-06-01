@@ -60,10 +60,19 @@ hr {
     background-color: #507840;
 }
 
+/* Fonts */
+
+
+.lemonada-Regular {
+  font-family: "Lemonada", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
 /* Typography */
 h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Lemonada, Times, serif;
     font-size: 7em;
     font-weight: 400;
     text-align: center;
