@@ -49,6 +49,14 @@ header {
     flex: 3;
 }
 
+.panda {
+    display: none;
+}
+
+.pandaImage {
+    height: 50px;
+}
+
 footer {
     height: 5vh;
     padding: 10px;
@@ -115,8 +123,4 @@ p, #generalInfo {
     font-size: 1em;
     font-family: "Elms Sans", sans-serif;
     font-weight: 400;
-}
-
-.panda {
-    display: none;
 }
