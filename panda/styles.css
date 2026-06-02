@@ -75,6 +75,10 @@ summary {
     cursor: pointer;
 }
 
+summary > * {
+  display: inline;
+}
+
 /* Fonts */
 
 
