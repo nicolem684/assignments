@@ -14,7 +14,7 @@
     <body>
         <header>
             <h1>Panda Diplomacy</h1>
-            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships</h2>
+            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships. Updated!</h2>
             <hr>
         </header>
 
@@ -97,13 +97,27 @@
                     const matchedZoo = pandaDataFetch.find(item => item.ZOO === clickedZoo);
 
                     if (matchedZoo) {
+                        // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked.
+                        document.querySelectorAll('.panda').forEach(div => div.style.display = 'none');
+                        
                         document.getElementById('zooName').textContent = matchedZoo.ZOO;
                         document.getElementById('country').textContent = matchedZoo.COUNTRY;
                         document.getElementById('generalInfo').textContent = matchedZoo.GENERAL_INFO;
-                        document.getElementById('pandaName1').textContent = matchedZoo.NAME_1;
+                        if (matchedZoo.PANDA_1) {
+                            document.getElementById('pandaName1').textContent = matchedZoo.NAME_1;
+                            document.getElementById('panda1').style.display = 'block';
+                        }
                         if (matchedZoo.PANDA_2) {
                             document.getElementById('pandaName2').textContent = matchedZoo.NAME_2;
                             document.getElementById('panda2').style.display = 'block';
+                        }
+                        if (matchedZoo.PANDA_3) {
+                            document.getElementById('pandaName3').textContent = matchedZoo.NAME_3;
+                            document.getElementById('panda3').style.display = 'block';
+                        }
+                        if (matchedZoo.PANDA_4) {
+                            document.getElementById('pandaName4').textContent = matchedZoo.NAME_4;
+                            document.getElementById('panda4').style.display = 'block';
                         }
                     } else {
                         console.warn('No data found in JSON matching: "${clickedZoo}"');
