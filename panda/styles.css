@@ -2,9 +2,7 @@
 
 /* --- Structure --- */
 
-html, body {
-    margin: 0;
-    padding: 0;
+body {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,53 +12,47 @@ header {
     background-color: #FFFFFF;
     text-align: center;
     justify-content: center;
-    margin: 0 auto;
-    padding: 20px 0;
     width: 80%;
+    margin: 0 auto;
     flex-shrink: 0;
 }
 
 #main {
-    margin: 0 auto;
-    flex: 1;
     display: flex;
+    flex: 1;
     flex-direction: column;
     min-height: 0;
+    margin: 0 auto;
 }
 
 #intro {
-    margin: 0 auto;
     width: 80%;
+    margin: 0 auto;
     flex-shrink: 0;
-}
-
-#introText {
-    padding: 10px 15px;
 }
 
 #content {
     background-color: lightgray;
+    position: relative;
     display: flex;
-    height: 70vh;
+    flex: 1;
+    height: 80vh;
     min-height: 400px;
     width: 80%;
     max-width: 2000px;
     margin: 0 auto;
     overflow: hidden;
-    position: relative;
-    flex: 1;
 }
 
 
 #sidebar {
     background-color: #507840;
-    padding: 15px;
     width: 30%;
+    padding: 0px, 10px;
     max-height: 100%;
     overflow-y: auto;
     box-sizing: border-box;
     flex-shrink: 0;
-    transition: margin-left 0.3s ease;
 }
 
 #map {
@@ -75,11 +67,9 @@ header {
 
 footer {
     height: 5vh;
-    padding: 10px;
-    justify-items: center;
+    min-height: 10px;
     flex-shrink: 0;
 }
-
 
 .pandaImage {
     height: 50px;
