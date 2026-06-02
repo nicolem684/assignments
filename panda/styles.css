@@ -71,6 +71,10 @@ hr {
     background-color: #507840;
 }
 
+summary {
+    display: inline;
+}
+
 /* Fonts */
 
 
