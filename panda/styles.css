@@ -2,7 +2,6 @@
 
 /* Structure */
 
-
 header {
     background-color: #FFFFFF;
     text-align: center;
@@ -59,7 +58,7 @@ footer {
 hr {
     width: 40%;
     height: 5px;
-    justify-content: center;
+    margin: 0 auto;
     background-color: #507840;
 }
 
