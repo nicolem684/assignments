@@ -14,7 +14,7 @@
     <body>
         <header>
             <h1>Panda Diplomacy</h1>
-            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships. Updated!</h2>
+            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships</h2>
             <hr>
         </header>
 
@@ -100,6 +100,16 @@
                         document.getElementById('zooName').textContent = matchedZoo.ZOO;
                         document.getElementById('country').textContent = matchedZoo.COUNTRY;
                         document.getElementById('generalInfo').textContent = matchedZoo.GENERAL_INFO;
+                        document.getElementById('pandaName1').textContent = matchedZoo.NAME_1;
+                        if (matchedZoo.PANDA_2) {
+                            document.getElementById('pandaName1').textContent = matchedZoo.NAME_2;
+                        }
+                        if (matchedZoo.PANDA_3) {
+                            document.getElementById('pandaName1').textContent = matchedZoo.NAME_3;
+                        }
+                        if (matchedZoo.PANDA_4) {
+                            document.getElementById('pandaName1').textContent = matchedZoo.NAME_4;
+                        }
                     } else {
                         console.warn('No data found in JSON matching: "${clickedZoo}"');
                     }
