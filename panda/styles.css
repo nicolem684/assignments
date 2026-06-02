@@ -72,7 +72,8 @@ hr {
 }
 
 summary {
-    display: inline;
+    display: flex;
+    align-items: center;
 }
 
 /* Fonts */
