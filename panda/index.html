@@ -102,13 +102,8 @@
                         document.getElementById('generalInfo').textContent = matchedZoo.GENERAL_INFO;
                         document.getElementById('pandaName1').textContent = matchedZoo.NAME_1;
                         if (matchedZoo.PANDA_2) {
-                            document.getElementById('pandaName1').textContent = matchedZoo.NAME_2;
-                        }
-                        if (matchedZoo.PANDA_3) {
-                            document.getElementById('pandaName1').textContent = matchedZoo.NAME_3;
-                        }
-                        if (matchedZoo.PANDA_4) {
-                            document.getElementById('pandaName1').textContent = matchedZoo.NAME_4;
+                            document.getElementById('pandaName2').textContent = matchedZoo.NAME_2;
+                            document.getElementById('pandaname2').style.display = 'block';
                         }
                     } else {
                         console.warn('No data found in JSON matching: "${clickedZoo}"');
