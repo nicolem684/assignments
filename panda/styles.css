@@ -32,7 +32,7 @@ header {
 }
 
 #content {
-    background-color: pink;
+    background-color: lightblue;
     position: relative;
     display: flex;
     flex: 1;
