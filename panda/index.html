@@ -57,19 +57,19 @@
             mapboxgl.accessToken = "pk.eyJ1Ijoibm1hbjQiLCJhIjoiY21wNXpycG5uMGdnNDJxbzhrYzF3cXhtZyJ9.FU0wGPTgG5sgUMMBkGRXXA";
 
             var bounds = [
-                [-170, -70], // Southwest [west, south] coordinates
-                [170, 80] // Northeast [east, north] coordinates 
+                [-170, -69], // Southwest [west, south] coordinates
+                [170, 78] // Northeast [east, north] coordinates 
             ];
             
             var map = new mapboxgl.Map({
                 container: 'map',
                 style: 'mapbox://styles/nman4/cmom1azlf003n01soadh5fl99',
-                center: [5,0],
+                center: [10,0],
                 minZoom: 1.1,
                 maxZoom: 9,
                 maxBounds: bounds,
                 renderWorldCopies: false,
-                zoom: 1.4
+                zoom: 1.2
             });
 
             let pandaDataFetch = [];
