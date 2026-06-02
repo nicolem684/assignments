@@ -101,22 +101,20 @@ hr {
 
 
 /* --- Typography --- */
-h1 {
+header h1 {
     font-family: "Lemonada", cursive;
     font-size: 4em;
     font-weight: 400;
     text-align: center;
-    margin: 0px auto;
-    padding: 0px;
+    margin-bottom: 0px;
 }
 
-h2 {
+header h2 {
     font-family: "Elms Sans", sans-serif;
     font-weight: 400;
-    margin: 0px auto;
+    margin-top: 0px;
     text-align: center;
     font-size: 2em;
-    padding: 0px;
 }
 
 #zooName {
