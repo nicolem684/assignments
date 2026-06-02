@@ -108,6 +108,7 @@ h1 {
     font-weight: 400;
     text-align: center;
     margin: 0px auto;
+    padding: 0px;
 }
 
 h2 {
@@ -116,6 +117,7 @@ h2 {
     margin: 0px auto;
     text-align: center;
     font-size: 2em;
+    padding: 0px;
 }
 
 #zooName {
