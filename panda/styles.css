@@ -1,77 +1,67 @@
 /* colors: #000000, #FFFFFF, #507840*/
 
-/* --- Structure --- */
-
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+/* Structure */
 
 header {
     background-color: #FFFFFF;
     text-align: center;
     justify-content: center;
-    width: 80%;
     margin: 0 auto;
-    flex-shrink: 0;
+    width: 80%;
 }
 
 #main {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    min-height: 0;
     margin: 0 auto;
 }
 
 #intro {
-    width: 80%;
+    display: flex;
     margin: 0 auto;
-    flex-shrink: 0;
+    width: 80%;
+    max-width: 2000px;
+}
+
+#introText {
+    flex: 1;
+    padding: 10px 15px;
 }
 
 #content {
-    background-color: lightblue;
-    position: relative;
     display: flex;
     flex: 1;
-    height: 80vh;
-    min-height: 400px;
+    background-color: lightgray;
+    height: 900px;
+    max-height: 70vh;
+    min-height: 20vh;
     width: 80%;
     max-width: 2000px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 
 #sidebar {
     background-color: #507840;
+    padding: 15px;
     width: 30%;
-    padding: 0px, 10px;
-    max-height: 100%;
-    overflow-y: auto;
-    box-sizing: border-box;
-    flex-shrink: 0;
+    overflow: auto;
 }
 
 #map {
-    width: 70%;
-    height: 100%;
-    flex: 1;
+    flex: 3;
 }
 
 .panda {
     display: none;
 }
 
-footer {
-    height: 10px;
-    flex-shrink: 0;
-}
-
 .pandaImage {
     height: 50px;
+}
+
+footer {
+    height: 5vh;
+    padding: 10px;
+    justify-items: center;
 }
 
 hr {
@@ -81,7 +71,7 @@ hr {
     background-color: #507840;
 }
 
-/* --- Fonts --- */
+/* Fonts */
 
 
 .lemonada-regular {
@@ -100,19 +90,18 @@ hr {
 }
 
 
-/* --- Typography --- */
-header h1 {
+/* Typography */
+h1 {
     font-family: "Lemonada", cursive;
     font-size: 4em;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 0px;
+    margin: 0px auto;
 }
 
-header h2 {
+h2 {
     font-family: "Elms Sans", sans-serif;
     font-weight: 400;
-    margin-top: 0px;
     text-align: center;
     font-size: 2em;
 }
