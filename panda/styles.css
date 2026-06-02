@@ -76,6 +76,14 @@ summary {
     align-items: center;
 }
 
+summary::marker {
+    display: none;
+}
+
+summary::after {
+    content: url("pandaIcon1.svg");
+}
+
 /* Fonts */
 
 
