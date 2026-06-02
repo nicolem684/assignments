@@ -1,7 +1,7 @@
 /* colors: 
 #000000 black
 #FBFFF1 ivory 
-#135D13 dark green
+#317231 dark green
 #96CC8F light green
 #C9E6C0 lightest green
 */
@@ -9,7 +9,7 @@
 /* Structure */
 
 header {
-    background-color: #135D13;
+    background-color: ##317231;
     text-align: center;
     justify-content: center;
     margin: 0 auto;
