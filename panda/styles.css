@@ -72,17 +72,7 @@ hr {
 }
 
 summary {
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-summary::marker {
-    display: none;
-}
-
-summary::before {
-    content: url("pandaIcon1.svg");
+    cursor: pointer;
 }
 
 /* Fonts */
