@@ -2,6 +2,14 @@
 
 /* --- Structure --- */
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     background-color: #FFFFFF;
     text-align: center;
@@ -9,17 +17,21 @@ header {
     margin: 0 auto;
     height: 15vh;
     width: 80%;
-    display: block;
+    flex-shrink: 0;
 }
 
 #main {
     margin: 0 auto;
-    display: block;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
 }
 
 #intro {
     margin: 0 auto;
     width: 80%;
+    flex-shrink: 0;
 }
 
 #introText {
@@ -35,6 +47,8 @@ header {
     max-width: 2000px;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
+    flex: 1;
 }
 
 
@@ -43,7 +57,7 @@ header {
     padding: 15px;
     width: 30%;
     max-height: 100%;
-    overflow: auto;
+    overflow-y: auto;
     box-sizing: border-box;
     flex-shrink: 0;
     transition: margin-left 0.3s ease;
@@ -51,6 +65,24 @@ header {
 
 #sidebar.collapse {
     margin-left: -30%;
+}
+
+#toggleSidebar {
+    position: absolute;
+    left: calc(30% + 10px); /* Hangs just out to the right of the sidebar */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensures it sits cleanly on top of the Mapbox canvas */
+    cursor: pointer;
+    background-color: #507840;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 12px;
+    transition: left 0.3s ease; /* Moves along with the sliding sidebar! */
+}
+
+#sidebar.collapse + #toggleSidebar {
+    left: 10px;
 }
 
 #map {
@@ -67,6 +99,7 @@ footer {
     height: 5vh;
     padding: 10px;
     justify-items: center;
+    flex-shrink: 0;
 }
 
 
