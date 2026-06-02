@@ -1,9 +1,14 @@
-/* colors: #000000, #FFFFFF, #507840*/
+/* colors: 
+#000000 black
+#FBFFF1 ivory 
+#135D13 dark green
+#96CC8F light green
+*/
 
 /* Structure */
 
 header {
-    background-color: #FFFFFF;
+    background-color: #135D13;
     text-align: center;
     justify-content: center;
     margin: 0 auto;
@@ -12,6 +17,7 @@ header {
 
 #main {
     margin: 0 auto;
+    background-color: #FBFFF1;
 }
 
 #intro {
@@ -24,6 +30,7 @@ header {
 #introText {
     flex: 1;
     padding: 10px 15px;
+    text-color: #000000;
 }
 
 #content {
@@ -41,7 +48,7 @@ header {
 
 
 #sidebar {
-    background-color: #507840;
+    background-color: #96CC8F;
     padding: 15px;
     width: 30%;
     overflow: auto;
@@ -106,6 +113,7 @@ h1 {
     font-weight: 400;
     text-align: center;
     margin: 0px auto;
+    text-color: #FFFFFF;
 }
 
 h2 {
@@ -113,6 +121,7 @@ h2 {
     font-weight: 400;
     text-align: center;
     font-size: 2em;
+    text-color: #FFFFFF;
 }
 
 #zooName {
@@ -120,6 +129,7 @@ h2 {
     font-weight: 400;
     text-align: center;
     font-size: 2em;
+    text-color: #000000;
 }
     
 #country {
@@ -127,10 +137,12 @@ h2 {
     font-weight: 400;
     text-align: center;
     font-size: 1.5em;
+    text-color: #000000;
 }
 
 p, #generalInfo {
     font-size: 1em;
     font-family: "Elms Sans", sans-serif;
     font-weight: 400;
+    text-color: #000000;
 }
