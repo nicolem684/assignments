@@ -66,8 +66,7 @@ header {
 }
 
 footer {
-    height: 5vh;
-    min-height: 10px;
+    height: 10px;
     flex-shrink: 0;
 }
 
