@@ -43,6 +43,7 @@ header {
     background-color: #507840;
     padding: 15px;
     width: 30%;
+    overflow: auto;
 }
 
 #map {
