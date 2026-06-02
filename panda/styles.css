@@ -72,13 +72,6 @@ footer {
     justify-items: center;
 }
 
-hr {
-    width: 40%;
-    height: 5px;
-    margin: 0 auto;
-    background-color: #507840;
-}
-
 summary {
     cursor: pointer;
 }
@@ -144,5 +137,5 @@ p, #generalInfo {
     font-size: 1em;
     font-family: "Elms Sans", sans-serif;
     font-weight: 400;
-    text-color: #000000;
+    color: #000000;
 }
