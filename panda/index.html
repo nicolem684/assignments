@@ -9,20 +9,19 @@
         <link rel="stylesheet" href="styles.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=MedievalSharp&family=Oregano:ital@0;1&family=Story+Script&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1>Panda Diplomacy</h1>
-            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships</h2>
+            <h1>Pandanomics</h1>
+            <h2>Here is just a small snippet of filler text to test out what the font looks like. Updated!</h2>
             <hr>
         </header>
 
         <div id="main">
             <section id="intro">
                 <article id="introText">
-                    <p> The current panda diplomacy program stipulates that every panda, including those born outside of the country, legally belongs to China and are loaned out to other countries instead of transferring ownership. In the 1970’s and 1980’s, the program was much simpler as China would gift pandas to other countries with no strings attached.
-</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </article>
             </section>
 
@@ -33,6 +32,9 @@
                     <h1 id="zooName">Zoo Name</h1>
                     <h2 id="country">Country</h2>
                     <article id="generalInfo">General Info</article>
+                    <div id="timeline">
+                        <p>Timeline</p>
+                    </div>
                     <div class="panda" id="panda1">
                         <p class="pandaName" id="pandaName1">Panda 1</p>
                     </div>
@@ -63,6 +65,7 @@
                 zoom: .8
             });
 
+            // I used Mapbox documentation to find these functions and tools, and used Google Gemini to help install the try, catch statements, along with cleaning up my code.
             let pandaDataFetch = [];
 
             async function initializeData() {
