@@ -291,21 +291,7 @@
     "BORN_2": "Sep 2008",
     "BIRTHPLACE_2": "Ya'an Bifengxia Base",
     "LOAN_START_2": "Sep 2012",
-    "LOAN_END_2": "2027",
-    "NAME_3": "",
-    "NICKNAME_3": "",
-    "GENDER_3": "",
-    "BORN_3": "",
-    "BIRTHPLACE_3": "",
-    "LOAN_START_3": "",
-    "LOAN_END_3": "",
-    "NAME_4": "",
-    "NICKNAME_4": "",
-    "GENDER_4": "",
-    "BORN_4": "",
-    "BIRTHPLACE_4": "",
-    "LOAN_START_4": "",
-    "LOAN_END_4": ""
+    "LOAN_END_2": "2027"
   },
   {
     "ZOO": "Taman Safari Indonesia",
@@ -332,14 +318,7 @@
     "BORN_3": "Nov 2025",
     "BIRTHPLACE_3": "Taman Safari Indonesia",
     "LOAN_START_3": "Nov 2025",
-    "LOAN_END_3": "2027-2029",
-    "NAME_4": "",
-    "NICKNAME_4": "",
-    "GENDER_4": "",
-    "BORN_4": "",
-    "BIRTHPLACE_4": "",
-    "LOAN_START_4": "",
-    "LOAN_END_4": ""
+    "LOAN_END_3": "2027-2029"
   },
   {
     "ZOO": "Adelaide Zoo",
@@ -359,21 +338,7 @@
     "BORN_2": "Aug 2021",
     "BIRTHPLACE_2": "Shenshuping Base",
     "LOAN_START_2": "Dec 2024",
-    "LOAN_END_2": "2034",
-    "NAME_3": "",
-    "NICKNAME_3": "",
-    "GENDER_3": "",
-    "BORN_3": "",
-    "BIRTHPLACE_3": "",
-    "LOAN_START_3": "",
-    "LOAN_END_3": "",
-    "NAME_4": "",
-    "NICKNAME_4": "",
-    "GENDER_4": "",
-    "BORN_4": "",
-    "BIRTHPLACE_4": "",
-    "LOAN_START_4": "",
-    "LOAN_END_4": ""
+    "LOAN_END_2": "2034"
   },
   {
     "ZOO": "Everland Resort",
@@ -433,14 +398,6 @@
     "GENDER_3": "Female",
     "BORN_3": "June 2020",
     "BIRTHPLACE_3": "Taipei Zoo",
-    "LOAN_START_3": "June 2020",
-    "LOAN_END_3": "",
-    "NAME_4": "",
-    "NICKNAME_4": "",
-    "GENDER_4": "",
-    "BORN_4": "",
-    "BIRTHPLACE_4": "",
-    "LOAN_START_4": "",
-    "LOAN_END_4": ""
+    "LOAN_START_3": "June 2020"
   }
 ]
