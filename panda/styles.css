@@ -13,7 +13,6 @@ header {
     text-align: center;
     justify-content: center;
     margin: 0 auto;
-    width: 80%;
 }
 
 #main {
@@ -31,7 +30,7 @@ header {
 #introText {
     flex: 1;
     padding: 10px 15px;
-    text-color: #000000;
+    color: #000000;
 }
 
 #content {
@@ -114,7 +113,7 @@ h1 {
     font-weight: 400;
     text-align: center;
     margin: 0px auto;
-    text-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 h2 {
@@ -122,7 +121,7 @@ h2 {
     font-weight: 400;
     text-align: center;
     font-size: 2em;
-    text-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 #zooName {
@@ -130,7 +129,7 @@ h2 {
     font-weight: 400;
     text-align: center;
     font-size: 2em;
-    text-color: #000000;
+    color: #000000;
 }
     
 #country {
@@ -138,7 +137,7 @@ h2 {
     font-weight: 400;
     text-align: center;
     font-size: 1.5em;
-    text-color: #000000;
+    color: #000000;
 }
 
 p, #generalInfo {
