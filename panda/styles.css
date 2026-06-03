@@ -61,6 +61,7 @@ header {
 
 #map {
     flex: 3;
+    margin-right: 10px;
 }
 
 .panda {
