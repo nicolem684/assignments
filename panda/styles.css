@@ -41,7 +41,8 @@ header {
     display: flex;
     flex: 1;
     background-color: #C9E6C0;
-    height: 1000px;
+    height: 900px;
+    max-height: 85vh;
     min-height: 20vh;
     width: 80%;
     max-width: 2000px;
