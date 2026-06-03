@@ -49,6 +49,7 @@ header {
     margin: 0 auto;
     border-radius: 15px;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 
@@ -66,7 +67,6 @@ header {
     height: 100%;
     border-radius: 15px;
     renderWorldCopies: false;
-    box-sizing: border-box;
 }
 
 .panda {
