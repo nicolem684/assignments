@@ -64,6 +64,9 @@ header {
 
 #sidebarHeader {
     background-color: #317231;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
 #map {
@@ -134,7 +137,7 @@ h2 {
 }
 
 #zooName {
-    font-family: "Elms Sans", sans-serif;
+    font-family: "Lemonada", cursive;
     font-weight: 400;
     text-align: center;
     font-size: 2em;
