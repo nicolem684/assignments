@@ -48,6 +48,7 @@ header {
     max-width: 2000px;
     margin: 0 auto;
     border-radius: 15px;
+    padding: 10px;
 }
 
 
@@ -63,7 +64,6 @@ header {
 #map {
     flex: 3;
     height: 100%;
-    padding: 10px 10px 10px 0px;
     border-radius: 15px;
     renderWorldCopies: false;
     box-sizing: border-box;
