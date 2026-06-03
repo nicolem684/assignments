@@ -15,6 +15,8 @@ header {
     margin: 15px auto 25px auto;
     width: 95%;
     border-radius: 15px;
+    box-sizing: border-box;
+    padding: 0 30px 25px 30px;
 }
 
 #main {
