@@ -59,7 +59,7 @@ header {
     width: 30%;
     overflow: auto;
     border-radius: 15px;
-    margin: 10px;
+    box-sizing: border-box;
 }
 
 #sidebarHeader {
