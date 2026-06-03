@@ -97,7 +97,9 @@
             });
 
             const nav = new mapboxgl.NavigationControl();
-            map.addControl(nav, 'top-left');
+            map.addControl(nav, 'top-right' {
+                showCompass: false
+            });
 
             let pandaDataFetch = [];
 
