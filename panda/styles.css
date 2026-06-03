@@ -66,6 +66,7 @@ header {
     margin: 10px 10px 10px 0px;
     border-radius: 15px;
     renderWorldCopies: false;
+    box-sizing: border-box;
 }
 
 .panda {
