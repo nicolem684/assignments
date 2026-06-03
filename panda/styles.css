@@ -63,7 +63,7 @@ header {
 #map {
     flex: 3;
     height: 100%;
-    margin: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 0px;
     border-radius: 15px;
     renderWorldCopies: false;
     box-sizing: border-box;
