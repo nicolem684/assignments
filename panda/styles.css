@@ -93,6 +93,7 @@ header {
 
 .pandaImage {
     height: 175px;
+    border-radius: 15px;
 }
 
 hr {
