@@ -105,10 +105,17 @@ hr {
 
 summary {
     cursor: pointer;
+    list-style: none;
 }
 
-summary > * {
-  display: inline;
+summary::before {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  margin-right: 7px;
+  background-image: url('pandaIcon1.svg'); 
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 footer {
