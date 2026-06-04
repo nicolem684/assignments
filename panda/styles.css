@@ -98,6 +98,7 @@ header {
 .pandaCard {
     background-color: #C9E6C0;
     border-radius: 15px;
+    padding: 15px;
 }
 
 .pandaImage {
