@@ -177,3 +177,7 @@ p, #generalInfo {
     font-weight: 400;
     color: #000000;
 }
+
+.pandaName {
+    font-family: "Lemonada", cursive;
+}
