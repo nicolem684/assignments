@@ -92,10 +92,8 @@ header {
     height: 175px;
 }
 
-footer {
-    height: 5vh;
-    padding: 10px;
-    justify-items: center;
+#generalInfo {
+    margin: 10px 0px;
 }
 
 summary {
@@ -104,6 +102,12 @@ summary {
 
 summary > * {
   display: inline;
+}
+
+footer {
+    height: 5vh;
+    padding: 10px;
+    justify-items: center;
 }
 
 /* Fonts */
