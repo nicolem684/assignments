@@ -55,11 +55,11 @@ header {
     box-sizing: border-box;
 }
 
-.bamboo {
+/* .bamboo {
     height: 550px;
     position: fixed;
     bottom: 0;
-}
+} */
 
 #sidebar {
     background-color: #96CC8F;
@@ -90,6 +90,12 @@ header {
 
 .pandaImage {
     height: 175px;
+}
+
+hr {
+    width: 35%;
+    color: #317231;
+    height: 5px;
 }
 
 #generalInfo {
