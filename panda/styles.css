@@ -52,9 +52,10 @@ header {
     box-sizing: border-box;
 }
 
-#bamboo1 {
-    height: 350px;
+.bamboo {
+    height: 500px;
     position: fixed;
+    bottom: 0;
 }
 
 #sidebar {
