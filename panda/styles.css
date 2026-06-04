@@ -52,6 +52,10 @@ header {
     box-sizing: border-box;
 }
 
+#bamboo1 {
+    height: 350px;
+    position: fixed;
+}
 
 #sidebar {
     background-color: #96CC8F;
