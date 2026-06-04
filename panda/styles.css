@@ -93,9 +93,10 @@ header {
 }
 
 hr {
+    border: none;
     width: 35%;
-    color: #317231;
-    height: 5px;
+    background-color: #317231;
+    height: 8px;
 }
 
 #generalInfo {
