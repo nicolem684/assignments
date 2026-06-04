@@ -56,6 +56,7 @@ header {
 #sidebar {
     background-color: #96CC8F;
     padding: 15px;
+    margin-right: 10px;
     width: 30%;
     overflow: auto;
     border-radius: 15px;
@@ -65,8 +66,8 @@ header {
 #sidebarHeader {
     background-color: #317231;
     border-radius: 15px;
-    padding: 5px;
-    margin-bottom: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 #map {
@@ -142,7 +143,7 @@ h2 {
     text-align: center;
     font-size: 2em;
     color: #FFFFFF;
-    line-height: 0.9;
+    line-height: 1;
 }
     
 #country {
