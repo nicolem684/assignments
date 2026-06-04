@@ -101,10 +101,10 @@
                 zoom: 0.8
             });
 
-            // const nav = new mapboxgl.NavigationControl();
-            // map.addControl(nav, 'top-right' {
-            //     showCompass: false
-            // });
+            const nav = new mapboxgl.NavigationControl({
+                showCompass: false;
+            });
+            map.addControl(nav, 'bottom-right');
 
             // // Code modified from online tutorial: https://www.sitepoint.com/community/t/how-to-trigger-animation-after-user-scroll-to-n-points-jquery-waypoints-with-multip/30128
             // $(window).on("scroll", function(){
