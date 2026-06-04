@@ -81,6 +81,7 @@
                         </div>
                     </details>
 
+                <button type="return" id="back">Back</button>
                 </section>
 
                 <div id="map"></div>
@@ -121,6 +122,12 @@
             //       $("#bamboo1").fadeOut('slow');
             //   }
             // }
+
+            const returnButton = document.getElementById("back");
+            returnButton.addEventListener('click', () => {
+                map.setZoom(0.8);
+                map.setCenter([10, 0]);
+            })
             
             let pandaDataFetch = [];
 
