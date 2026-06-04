@@ -26,6 +26,8 @@
 
             <br>
 
+            <img class="bamboo" id="bamboo1" src="bamboo_left.png" alt="An icon of a piece of bamboo.">
+            
             <section id="content">
                 <section id="sidebar">
                     <div id="sidebarHeader">
@@ -101,6 +103,14 @@
             //     showCompass: false
             // });
 
+            // Code modified from online tutorial: https://www.sitepoint.com/community/t/how-to-trigger-animation-after-user-scroll-to-n-points-jquery-waypoints-with-multip/30128
+            $(window).on("scroll", function(){
+              if($("body").scrollTop() === 100){
+                $(window).off("scroll");
+                  $("#bamboo1").fadeOut('slow');
+              }
+            }
+            
             let pandaDataFetch = [];
 
             async function initializeData() {
