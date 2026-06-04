@@ -59,9 +59,13 @@ header {
 }
 
 .bamboo {
-    height: 600px;
+    height: 550px;
     position: fixed;
-    bottom: 0;
+    bottom: -10;
+}
+
+#bamboo1 {
+    float: right;
 }
 
 #sidebar {
