@@ -142,7 +142,7 @@
                     if (matchedZoo) {
                         const coordinates = [matchedZoo.LONGITUDE, matchedZoo.LATITUDE];
                         map.flyTo({
-                            center: coordinates
+                            center: coordinates,
                             zoom: 8
                         });
                         
@@ -185,7 +185,7 @@
                             document.getElementById('panda4').style.display = 'block';
                         }
                     } else {
-                        console.warn('No data found in JSON matching: "${clickedZoo}"');
+                        console.warn(`No data found in JSON matching: "${clickedZoo}"`);
                     }
                 }
             });
