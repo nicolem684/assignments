@@ -140,11 +140,11 @@
                     const matchedZoo = pandaDataFetch.find(item => item.ZOO === clickedZoo);
                     
                     if (matchedZoo) {
-                        const coordinate: [matchedZoo.LONGITUDE, matchedZoo.LATITUDE];
+                        const coordinates = [matchedZoo.LONGITUDE, matchedZoo.LATITUDE];
                         map.flyTo({
                             center: coordinates
                             zoom: 8
-                        );
+                        });
                         
                         // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked.
                         document.querySelectorAll('.panda').forEach(div => div.style.display = 'none');
