@@ -95,7 +95,8 @@ header {
 hr {
     border: none;
     background-color: #317231;
-    height: 8px;
+    height: 4px;
+    border-radius: 2px;
 }
 
 #generalInfo {
