@@ -2,6 +2,8 @@
   {
     "ZOO": "San Diego Zoo",
     "COUNTRY": "USA",
+    "LATITUDE": "32.73605335",
+    "LONGITUDE": "-117.1509849",
     "GENERAL_INFO": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "NUM_PANDAS": "2",
     "NAME_1": "Yun Chuan",
@@ -22,6 +24,8 @@
   {
     "ZOO": "Smithsonian's National Zoological Park",
     "COUNTRY": "USA",
+    "LATITUDE": "38.9296573",
+    "LONGITUDE": "-77.0497844",
     "GENERAL_INFO": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "NUM_PANDAS": "2",
     "NAME_1": "Bao Li",
@@ -42,6 +46,8 @@
   {
     "ZOO": "Chapultepec Zoo",
     "COUNTRY": "Mexico",
+    "LATITUDE": "19.42327931",
+    "LONGITUDE": "-99.18949342",
     "GENERAL_INFO": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "NUM_PANDAS": "1",
     "NAME_1": "Xin Xin",
@@ -55,6 +61,8 @@
   {
     "ZOO": "Zoo Madrid",
     "COUNTRY": "Spain",
+    "LATITUDE": "40.40902093",
+    "LONGITUDE": "-3.76125026",
     "GENERAL_INFO": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "NUM_PANDAS": "2",
     "NAME_1": "Jin Xi",
