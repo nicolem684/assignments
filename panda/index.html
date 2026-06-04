@@ -141,7 +141,7 @@
                     
                     if (matchedZoo) {
                         const coordinates = [matchedZoo.LONGITUDE, matchedZoo.LATITUDE];
-                        map.panTo({
+                        map.flyTo({
                             center: coordinates,
                             zoom: 6.5
                         });
