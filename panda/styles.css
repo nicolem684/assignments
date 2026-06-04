@@ -58,11 +58,11 @@ header {
     box-sizing: border-box;
 }
 
-/* .bamboo {
-    height: 550px;
+.bamboo {
+    height: 600px;
     position: fixed;
     bottom: 0;
-} */
+}
 
 #sidebar {
     background-color: #96CC8F;
