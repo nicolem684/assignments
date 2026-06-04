@@ -61,7 +61,7 @@ header {
 .bamboo {
     height: 550px;
     position: fixed;
-    bottom: -10;
+    bottom: 0;
 }
 
 #bamboo1 {
