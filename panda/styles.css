@@ -8,12 +8,16 @@
 
 /* Structure */
 
+html {
+    background-color: #FBFFF1;
+}
+
 header {
     background-color: #317231;
     text-align: center;
     justify-content: center;
     margin: 15px auto 25px auto;
-    width: 95%;
+    width: 90%;
     border-radius: 15px;
     box-sizing: border-box;
     padding: 0 30px 25px 30px;
@@ -21,13 +25,12 @@ header {
 
 #main {
     margin: 0 auto;
-    background-color: #FBFFF1;
 }
 
 #intro {
     display: flex;
     margin: 0 auto;
-    width: 70%;
+    width: 65%;
     max-width: 2000px;
 }
 
