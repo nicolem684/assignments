@@ -109,11 +109,14 @@ hr {
 summary {
     cursor: pointer;
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 summary::before {
     content: "";
     display: inline-block;
+    flex-shrink: 0;
     height: 15px;
     width: 15px;
     margin-right: 7px;
