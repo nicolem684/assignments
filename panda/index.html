@@ -8,6 +8,8 @@
         <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.9.0/mapbox-gl.js'></script>
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.9.0/mapbox-gl.css' rel='stylesheet' />
         <link rel="stylesheet" href="styles.css"/>
+
+        // Fonts
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
@@ -27,9 +29,10 @@
 
             <br>
 
-            <!-- <img class="bamboo" src="bamboo_left1.svg" alt="An icon of a piece of bamboo."> -->
+            
             
             <section id="content">
+                // Panel that shows up to the left of the map
                 <section id="sidebar">
                     <div id="sidebarHeader">
                         <h1 id="zooName">Click on a panda marker on the map to explore where pandas are around the world!</h1>
@@ -38,6 +41,7 @@
                     <article id="generalInfo"></article>
                     <hr>
 
+                    // Panda #1
                     <details open class="panda" id="panda1">
                         <summary><p class="pandaName" id="pandaName1">Panda 1</p></summary>
                         <div class="pandaCard">
@@ -50,6 +54,7 @@
                         </div>
                     </details>
 
+                    // Panda #2
                     <details open class="panda" id="panda2">
                         <summary><p class="pandaName" id="pandaName2">Panda 2</p></summary>
                         <div class="pandaCard">
@@ -62,6 +67,7 @@
                         </div>
                     </details>
 
+                    // Panda #3
                     <details open class="panda" id="panda3">
                         <summary><p class="pandaName" id="pandaName3">Panda 3</p></summary>
                         <div class="pandaCard">
@@ -74,6 +80,7 @@
                         </div>
                     </details>
 
+                    // Panda #4
                     <details open class="panda" id="panda4">
                         <summary><p class="pandaName" id="pandaName4">Panda 4</p></summary>
                         <div class="pandaCard">
@@ -86,9 +93,11 @@
                         </div>
                     </details>
 
+                // Navigation button in the sidepanel
                 <button type="return" id="back">Back</button>
                 </section>
 
+                // Map container
                 <div id="map"></div>
             </section>
         </div>
@@ -97,28 +106,30 @@
 
         <script>
             mapboxgl.accessToken = "pk.eyJ1Ijoibm1hbjQiLCJhIjoiY21wNXpycG5uMGdnNDJxbzhrYzF3cXhtZyJ9.FU0wGPTgG5sgUMMBkGRXXA";
-
+            
+            // Bounds
             var bounds = [
                 [-179, -85], // Southwest [west, south] coordinates
                 [179, 85] // Northeast [east, north] coordinates 
             ];
-            
+
             var map = new mapboxgl.Map({
                 container: 'map',
                 style: 'mapbox://styles/nman4/cmom1azlf003n01soadh5fl99',
                 center: [10,0],
-                minZoom: 0.5,
-                maxZoom: 8.5,
+                minZoom: 0.5,       // Showing global scale so minZoom is very low so user can see the whole map
+                maxZoom: 8.5,       // Want user to see which city the zoo is in, but don't need them to see smaller streets, etc
                 maxBounds: bounds,
                 zoom: 0.8
             });
 
+            // Navigation controls
             const nav = new mapboxgl.NavigationControl({
-                showCompass: false
+                showCompass: false      // Orientation isn't crucial for this map
             });
-            map.addControl(nav, 'bottom-right');
+            map.addControl(nav, 'bottom-right');    // Set in a noticeable place
 
-
+            // In the sidepanel, get user back to global view
             const returnButton = document.getElementById("back");
             returnButton.addEventListener('click', () => {
                 map.setZoom(0.8);
@@ -127,19 +138,21 @@
             
             let pandaDataFetch = [];
 
-            // I learned about async functions and the 'await' command through documentation and Google Gemini.
+            // I learned about async functions and the 'await' command through documentation (https://www.w3schools.com/js/js_async.asp) and Google Gemini.
+            // This function runs automatically and loads in data from the json asynchronously, allowing other parts of the program to run and preventing the page from crashing while data from the file is pulled in.
             async function initializeData() {
-                const response = await fetch('pandaData.json');
+                const response = await fetch('pandaData.json');     
                 pandaDataFetch = await response.json();
-                enableMapInteractions();
+                enableMapInteractions();        // Once the data from the json has been fetched, the program runs a function that enables interaction on the map. This prevents errors during runtime and ensures data is loaded before the user can click on the map.
             }
             initializeData();
 
+            // Function that turns on interaction and listens for clicks, populating the sidebar with different data once interacted with.
             function enableMapInteractions() {
                 // Listen for clicks on the points layer.
                 map.on('click', 'panda-locations', async(e) => {
                 if (e.features && e.features.length > 0) {
-                    const clickedZoo = e.features[0].properties.ZOO;
+                    const clickedZoo = e.features[0].properties.Zoo;
                     console.log('Feature clicked:', clickedZoo);
                     
                     const matchedZoo = pandaDataFetch.find(item => item.ZOO === clickedZoo);
