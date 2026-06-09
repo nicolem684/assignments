@@ -75,7 +75,7 @@
                     </details>
 
                     <details class="panda" id="panda4">
-                        <summary><p class="pandaName" id="pandaName1">Panda 4</p></summary>
+                        <summary><p class="pandaName" id="pandaName4">Panda 4</p></summary>
                         <div class="pandaCard">
                             <img class="pandaImage" id="pandaImage4" src="https://sandiegozoowildlifealliance.org/sites/default/files/styles/3_2_aspect_ratio_hero_crop/public/2024-05/the-best-is-yet-to-come_1200x800.jpg?itok=NBnEIT_a" alt="A photo of the panda.">
                             <p class="caption" id="caption4">Caption</p>
@@ -91,8 +91,6 @@
 
                 <div id="map"></div>
             </section>
-
-            <!-- <img class="bamboo" src="bamboo_right1.svg" alt="An icon of a piece of bamboo."> -->
         </div>
 
         <footer></footer>
@@ -129,25 +127,19 @@
             
             let pandaDataFetch = [];
 
+            // I learned about async functions and the 'await' command through documentation and Google Gemini.
             async function initializeData() {
-                try {
-                    const response = await fetch('pandaData.json');
-                    pandaDataFetch = await response.json();
-                    console.log('JSON Data Loaded successfully');
-
-                    enableMapInteractions();
-                } catch (error) {
-                    console.error('"Failed to load JSON file:', error);
-                }
+                const response = await fetch('pandaData.json');
+                pandaDataFetch = await response.json();
+                enableMapInteractions();
             }
             initializeData();
 
             function enableMapInteractions() {
-                // Listen for clicks on the points layer
+                // Listen for clicks on the points layer.
                 map.on('click', 'panda-locations', async(e) => {
                 if (e.features && e.features.length > 0) {
                     const clickedZoo = e.features[0].properties.Zoo;
-                    
                     console.log('Feature clicked:', clickedZoo);
                     
                     const matchedZoo = pandaDataFetch.find(item => item.ZOO === clickedZoo);
@@ -166,7 +158,7 @@
                         document.getElementById('country').textContent = matchedZoo.COUNTRY;
                         document.getElementById('generalInfo').textContent = matchedZoo.GENERAL_INFO;
 
-
+                        // I got help from Joanna to figure out how to pull data in from the json and populate the sidebar.
                         if (matchedZoo.NAME_1) {
                             document.getElementById('pandaName1').textContent = matchedZoo.NAME_1;
                             document.getElementById('pandaImage1').src = matchedZoo.IMAGE_1;
