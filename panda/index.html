@@ -162,9 +162,10 @@
                             zoom: 6.5
                         });
                         
-                        // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked.
+                        // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked. It ensures that each of the "panda cards" are set to not display so that they get populated correctly later in the code. 
                         document.querySelectorAll('.panda').forEach(div => div.style.display = 'none');
                         
+                        // Populates the data fields in the side panel
                         document.getElementById('zooName').textContent = matchedZoo.ZOO;
                         document.getElementById('country').textContent = matchedZoo.COUNTRY;
                         document.getElementById('generalInfo').textContent = matchedZoo.GENERAL_INFO;
