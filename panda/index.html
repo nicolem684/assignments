@@ -41,7 +41,7 @@
                     <hr>
 
                     <!-- Panda #1 -->
-                    <details class="panda" id="panda1">
+                    <details class="panda hidden" id="panda1">
                         <summary><p class="pandaName" id="pandaName1">Panda 1</p></summary>
                         <div class="pandaCard">
                             <img class="pandaImage" id="pandaImage1" src="https://sandiegozoowildlifealliance.org/sites/default/files/styles/3_2_aspect_ratio_hero_crop/public/2024-05/the-best-is-yet-to-come_1200x800.jpg?itok=NBnEIT_a" alt="A photo of the panda.">
@@ -54,7 +54,7 @@
                     </details>
 
                     <!-- Panda #2 -->
-                    <details class="panda" id="panda2">
+                    <details class="panda hidden" id="panda2">
                         <summary><p class="pandaName" id="pandaName2">Panda 2</p></summary>
                         <div class="pandaCard">
                             <img class="pandaImage" id="pandaImage2" src="https://sandiegozoowildlifealliance.org/sites/default/files/styles/3_2_aspect_ratio_hero_crop/public/2024-05/the-best-is-yet-to-come_1200x800.jpg?itok=NBnEIT_a" alt="A photo of the panda.">
@@ -67,7 +67,7 @@
                     </details>
 
                     <!-- Panda #3 -->
-                    <details class="panda" id="panda3">
+                    <details class="panda hidden" id="panda3">
                         <summary><p class="pandaName" id="pandaName3">Panda 3</p></summary>
                         <div class="pandaCard">
                             <img class="pandaImage" id="pandaImage3" src="https://sandiegozoowildlifealliance.org/sites/default/files/styles/3_2_aspect_ratio_hero_crop/public/2024-05/the-best-is-yet-to-come_1200x800.jpg?itok=NBnEIT_a" alt="A photo of the panda.">
@@ -80,7 +80,7 @@
                     </details>
 
                     <!-- Panda #4 -->
-                    <details class="panda" id="panda4">
+                    <details class="panda hidden" id="panda4">
                         <summary><p class="pandaName" id="pandaName4">Panda 4</p></summary>
                         <div class="pandaCard">
                             <img class="pandaImage" id="pandaImage4" src="https://sandiegozoowildlifealliance.org/sites/default/files/styles/3_2_aspect_ratio_hero_crop/public/2024-05/the-best-is-yet-to-come_1200x800.jpg?itok=NBnEIT_a" alt="A photo of the panda.">
@@ -163,7 +163,7 @@
                         });
                         
                         // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked. It ensures that each of the "panda cards" are set to not display so that they get populated correctly later in the code. 
-                        document.querySelectorAll('.panda').forEach(div => div.style.display = 'none');
+                        document.querySelectorAll('.panda').forEach(div => div.classList.add('hidden'));
                         
                         // Populates the data fields in the side panel
                         document.getElementById('zooName').textContent = matchedZoo.ZOO;
@@ -179,7 +179,7 @@
                             document.getElementById('pandaBirthdate1').textContent = "Born: " + matchedZoo.BORN_1;
                             document.getElementById('pandaLoanStart1').textContent = "Loan start: " + matchedZoo.LOAN_START_1;
                             document.getElementById('pandaLoanEnd1').textContent = "Loan end: " + matchedZoo.LOAN_END_1;
-                            document.getElementById('panda1').style.display = 'block';
+                            document.getElementById('panda1').classList.remove('hidden');
                         }
                         if (matchedZoo.NAME_2) {
                             document.getElementById('pandaName2').textContent = matchedZoo.NAME_2;
@@ -189,7 +189,7 @@
                             document.getElementById('pandaBirthdate2').textContent = "Born: " + matchedZoo.BORN_2;
                             document.getElementById('pandaLoanStart2').textContent = "Loan start: " + matchedZoo.LOAN_START_2;
                             document.getElementById('pandaLoanEnd2').textContent = "Loan end: " + matchedZoo.LOAN_END_2;
-                            document.getElementById('panda2').style.display = 'block';
+                            document.getElementById('panda2').classList.remove('hidden');
                         }
                         if (matchedZoo.NAME_3) {
                             document.getElementById('pandaName3').textContent = matchedZoo.NAME_3;
@@ -199,7 +199,7 @@
                             document.getElementById('pandaBirthdate3').textContent = "Born: " + matchedZoo.BORN_3;
                             document.getElementById('pandaLoanStart3').textContent = "Loan start: " + matchedZoo.LOAN_START_3;
                             document.getElementById('pandaLoanEnd3').textContent = "Loan end: " + matchedZoo.LOAN_END_3;
-                            document.getElementById('panda3').style.display = 'block';
+                            document.getElementById('panda3').classList.remove('hidden');
                         }
                         if (matchedZoo.NAME_4) {
                             document.getElementById('pandaName4').textContent = matchedZoo.NAME_4;
@@ -209,7 +209,7 @@
                             document.getElementById('pandaBirthdate4').textContent = "Born: " + matchedZoo.BORN_4;
                             document.getElementById('pandaLoanStart4').textContent = "Loan start: " + matchedZoo.LOAN_START_4;
                             document.getElementById('pandaLoanEnd4').textContent = "Loan end: " + matchedZoo.LOAN_END_4;
-                            document.getElementById('panda4').style.display = 'block';
+                            document.getElementById('panda4').classList.remove('hidden');
                         }
                     } else {
                         console.warn(`No data found in JSON matching: "${clickedZoo}"`);
