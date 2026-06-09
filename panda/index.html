@@ -9,7 +9,7 @@
         <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.9.0/mapbox-gl.css' rel='stylesheet' />
         <link rel="stylesheet" href="styles.css"/>
 
-        // Fonts
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
@@ -30,9 +30,8 @@
             <br>
 
             
-            
             <section id="content">
-                // Panel that shows up to the left of the map
+                <!-- Panel that shows up to the left of the map  -->
                 <section id="sidebar">
                     <div id="sidebarHeader">
                         <h1 id="zooName">Click on a panda marker on the map to explore where pandas are around the world!</h1>
@@ -41,7 +40,7 @@
                     <article id="generalInfo"></article>
                     <hr>
 
-                    // Panda #1
+                    <!-- Panda #1 -->
                     <details open class="panda" id="panda1">
                         <summary><p class="pandaName" id="pandaName1">Panda 1</p></summary>
                         <div class="pandaCard">
@@ -54,7 +53,7 @@
                         </div>
                     </details>
 
-                    // Panda #2
+                    <!-- Panda #2 -->
                     <details open class="panda" id="panda2">
                         <summary><p class="pandaName" id="pandaName2">Panda 2</p></summary>
                         <div class="pandaCard">
@@ -67,7 +66,7 @@
                         </div>
                     </details>
 
-                    // Panda #3
+                    <!-- Panda #3 -->
                     <details open class="panda" id="panda3">
                         <summary><p class="pandaName" id="pandaName3">Panda 3</p></summary>
                         <div class="pandaCard">
@@ -80,7 +79,7 @@
                         </div>
                     </details>
 
-                    // Panda #4
+                    <!-- Panda #4 -->
                     <details open class="panda" id="panda4">
                         <summary><p class="pandaName" id="pandaName4">Panda 4</p></summary>
                         <div class="pandaCard">
@@ -93,11 +92,10 @@
                         </div>
                     </details>
 
-                // Navigation button in the sidepanel
+                <!-- Navigation button in the sidepanel -->
                 <button type="return" id="back">Back</button>
                 </section>
 
-                // Map container
                 <div id="map"></div>
             </section>
         </div>
@@ -151,15 +149,15 @@
             function enableMapInteractions() {
                 // Listen for clicks on the points layer.
                 map.on('click', 'panda-locations', async(e) => {
-                if (e.features && e.features.length > 0) {
-                    const clickedZoo = e.features[0].properties.Zoo;
+                if (e.features && e.features.length > 0) {      // Accesses Mapbox attributes based on clicked location.
+                    const clickedZoo = e.features[0].properties.Zoo;    // Creates variable that holds the name of the clicked zoo.
                     console.log('Feature clicked:', clickedZoo);
                     
-                    const matchedZoo = pandaDataFetch.find(item => item.ZOO === clickedZoo);
+                    const matchedZoo = pandaDataFetch.find(item => item.ZOO === clickedZoo);    // Variable that finds the correct zoo in the data from the json.
                     
-                    if (matchedZoo) {
+                    if (matchedZoo) {   // Makes sure target zoo is in the json
                         const coordinates = [matchedZoo.LONGITUDE, matchedZoo.LATITUDE];
-                        map.flyTo({
+                        map.flyTo({     // Zooms map to center on the target zoo
                             center: coordinates,
                             zoom: 6.5
                         });
