@@ -119,13 +119,6 @@
             });
             map.addControl(nav, 'bottom-right');
 
-            // // Code modified from online tutorial: https://www.sitepoint.com/community/t/how-to-trigger-animation-after-user-scroll-to-n-points-jquery-waypoints-with-multip/30128
-            // $(window).on("scroll", function(){
-            //   if($("body").scrollTop() === 100){
-            //     $(window).off("scroll");
-            //       $("#bamboo1").fadeOut('slow');
-            //   }
-            // }
 
             const returnButton = document.getElementById("back");
             returnButton.addEventListener('click', () => {
@@ -171,6 +164,8 @@
                         document.getElementById('zooName').textContent = matchedZoo.ZOO;
                         document.getElementById('country').textContent = matchedZoo.COUNTRY;
                         document.getElementById('generalInfo').textContent = matchedZoo.GENERAL_INFO;
+
+
                         if (matchedZoo.NAME_1) {
                             document.getElementById('pandaName1').textContent = matchedZoo.NAME_1;
                             document.getElementById('pandaImage1').src = matchedZoo.IMAGE_1;
