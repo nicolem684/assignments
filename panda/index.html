@@ -15,7 +15,7 @@
     <body>
         <header>
             <h1>Panda Diplomacy</h1>
-            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships. Loaded</h2>
+            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships</h2>
         </header>
 
         <div id="main">
@@ -139,7 +139,7 @@
                 // Listen for clicks on the points layer.
                 map.on('click', 'panda-locations', async(e) => {
                 if (e.features && e.features.length > 0) {
-                    const clickedZoo = e.features[0].properties.Zoo;
+                    const clickedZoo = e.features[0].properties.ZOO;
                     console.log('Feature clicked:', clickedZoo);
                     
                     const matchedZoo = pandaDataFetch.find(item => item.ZOO === clickedZoo);
