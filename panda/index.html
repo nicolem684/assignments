@@ -17,7 +17,7 @@
     <body>
         <header>
             <h1>Panda Diplomacy</h1>
-            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships</h2>
+            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships. Loaded!</h2>
         </header>
 
         <div id="main">
@@ -180,6 +180,7 @@
                             document.getElementById('pandaLoanStart1').textContent = "Loan start: " + matchedZoo.LOAN_START_1;
                             document.getElementById('pandaLoanEnd1').textContent = "Loan end: " + matchedZoo.LOAN_END_1;
                             document.getElementById('panda1').classList.remove('hidden');
+                            document.getElementById('panda1').style.display = "block";
                         }
                         if (matchedZoo.NAME_2) {
                             document.getElementById('pandaName2').textContent = matchedZoo.NAME_2;
@@ -190,6 +191,7 @@
                             document.getElementById('pandaLoanStart2').textContent = "Loan start: " + matchedZoo.LOAN_START_2;
                             document.getElementById('pandaLoanEnd2').textContent = "Loan end: " + matchedZoo.LOAN_END_2;
                             document.getElementById('panda2').classList.remove('hidden');
+                            document.getElementById('panda2').style.display = "block";
                         }
                         if (matchedZoo.NAME_3) {
                             document.getElementById('pandaName3').textContent = matchedZoo.NAME_3;
@@ -200,6 +202,7 @@
                             document.getElementById('pandaLoanStart3').textContent = "Loan start: " + matchedZoo.LOAN_START_3;
                             document.getElementById('pandaLoanEnd3').textContent = "Loan end: " + matchedZoo.LOAN_END_3;
                             document.getElementById('panda3').classList.remove('hidden');
+                            document.getElementById('panda3').style.display = "block";
                         }
                         if (matchedZoo.NAME_4) {
                             document.getElementById('pandaName4').textContent = matchedZoo.NAME_4;
@@ -210,6 +213,7 @@
                             document.getElementById('pandaLoanStart4').textContent = "Loan start: " + matchedZoo.LOAN_START_4;
                             document.getElementById('pandaLoanEnd4').textContent = "Loan end: " + matchedZoo.LOAN_END_4;
                             document.getElementById('panda4').classList.remove('hidden');
+                            document.getElementById('panda4').style.display = "block";
                         }
                     } else {
                         console.warn(`No data found in JSON matching: "${clickedZoo}"`);
