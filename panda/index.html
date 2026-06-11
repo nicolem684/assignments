@@ -17,7 +17,7 @@
     <body>
         <header>
             <h1>Panda Diplomacy</h1>
-            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships. Loaded.</h2>
+            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships.</h2>
         </header>
 
         <div id="main">
@@ -34,7 +34,7 @@
                 <!-- Panel that shows up to the left of the map  -->
                 <section id="sidebar">
                     <div id="sidebarHeader">
-                        <h1 id="zooName">Click on a panda marker on the map to explore where pandas are around the world!</h1>
+                        <h1 id="zooName">Click on a panda marker to get started!</h1>
                         <h2 id="country"></h2>
                     </div>
                     <article id="generalInfo"></article>
@@ -92,18 +92,21 @@
                         </div>
                     </details>
 
-                    <details class="credits">
+                    <!-- Data Credits -->
+                    <details class="credits hidden" id="dataSources">
                         <summary><p class="dataCredits">Data Sources</p></summary>
                         <div id="citations">
                             <p id="sources"></p>
                         </div>
                     </details>
 
-                <!-- Navigation button in the sidepanel -->
-                <button type="return" id="back">Back</button>
+                    <button type="info" id="data">Data Sources</button>
+                
                 </section>
 
                 <div id="map"></div>
+                <!-- Navigation button return to global view -->
+                <button type="return" id="back">Return</button>
             </section>
         </div>
 
