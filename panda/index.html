@@ -204,7 +204,8 @@
 
                         // Populate data credits
                         document.getElementById('citations').innerHTML = '';
-                        document.getElementById(`dataSources`).classList.remove('hidden');
+                        document.getElementById('dataSources').classList.remove('hidden');
+                        document.getElementById('dataSources').style.display = "block";
                         for (let j=1; j<=5; j++) {
                             const citation = `CITATION_${j}`;
                             if (matchedZoo[citation]) {
