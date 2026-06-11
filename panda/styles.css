@@ -157,13 +157,19 @@ button {
 #back {
     border-radius: 3px;
     text-align: center;
-    position: absolute;
+    display: inline-block;
+    position: relative;
     height: 5%;
 }
 
 #info {
     background-color: white;
     color: black;
+}
+
+.navBtn {
+    position: absolute;
+    display: flex;
 }
 
 #generalInfo {
