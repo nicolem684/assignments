@@ -164,6 +164,11 @@ button {
     position: absolute;
 }
 
+#info {
+    background-color: white;
+    color: black;
+}
+
 #generalInfo {
     margin: 10px 0px;
 }
