@@ -61,10 +61,8 @@ header {
     color: #000000;
 }
 
-/* I learned more about CSS grid layouts through W3Schools and this website: https://drafts.csswg.org/css-grid/#overview */
 #content {
-    display: grid;
-    grid-template-columns: 30% 70%;
+    display: flex;
     background-color: #C9E6C0;
     height: 900px;
     max-height: 80vh;
@@ -79,11 +77,11 @@ header {
 }
 
 #sidebar {
-    grid-column: 1;
-    height: 100%;
     background-color: #96CC8F;
     padding: 15px;
     margin-right: 10px;
+    width: 30%;
+    min-width: 200px;
     overflow-y: auto;
     border-radius: 15px;
     box-sizing: border-box;
@@ -98,7 +96,8 @@ header {
 
 #map {
     height: 100%;
-    grid-column: 2;
+    flex-grow: 1;
+    position: relative;
 }
 
 hr {
@@ -175,9 +174,10 @@ summary::before {
 /* ------- */
 
 .navBtn {
-    grid-column: 2;
     position: absolute;
-    left: 31%;
+    display: flex;
+    top: 15px;
+    left: 15px;
     z-index: 1000;
 }
 
