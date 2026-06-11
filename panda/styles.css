@@ -145,8 +145,6 @@ summary {
     list-style: none;
     display: flex;
     align-items: center;
-    background-color: #C9E6C0;
-    border-radius: 5px;
 }
 
 summary::before {
