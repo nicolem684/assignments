@@ -163,6 +163,9 @@ summary::before {
     display: none;
 }
 
+.caption {
+    overflow: wrap;
+}
 
 /* ------- */
 /* Buttons */
