@@ -61,6 +61,7 @@ header {
     color: #000000;
 }
 
+/* I learned more about CSS grid layouts through W3Schools and this website: https://drafts.csswg.org/css-grid/#overview */
 #content {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -175,8 +176,8 @@ summary::before {
 
 .navBtn {
     grid-column: 2;
-    top: 15px;
-    left: 15px;
+    position: absolute;
+    left: 31%;
     z-index: 1000;
 }
 
