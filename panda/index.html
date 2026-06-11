@@ -162,6 +162,12 @@
                 // Listen for clicks on the points layer.
                 map.on('click', 'panda-locations', async(e) => {
                 if (e.features && e.features.length > 0) {      // Accesses Mapbox attributes based on clicked location.
+                    // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked. It ensures that each of the "panda cards" are set to not display so that they get populated correctly later in the code. 
+                    document.querySelectorAll('.panda').forEach(div => {
+                        div.classList.add('hidden');
+                        div.classList.remove('open');
+                    });
+                    
                     const clickedZoo = e.features[0].properties.Zoo;    // Creates variable that holds the name of the clicked zoo.
                     console.log('Feature clicked:', clickedZoo);
                     
@@ -174,11 +180,6 @@
                             zoom: 6.5
                         });
                         
-                        // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked. It ensures that each of the "panda cards" are set to not display so that they get populated correctly later in the code. 
-                        document.querySelectorAll('.panda').forEach(div => {
-                            div.classList.add('hidden');
-                            div.classList.remove('open');
-                        });
                         
                         // Populates the data fields in the side panel
                         document.getElementById('zooName').textContent = matchedZoo.ZOO;
