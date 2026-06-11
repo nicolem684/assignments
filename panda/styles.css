@@ -62,7 +62,8 @@ header {
 }
 
 #content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 70%;
     background-color: #C9E6C0;
     height: 900px;
     max-height: 80vh;
@@ -73,14 +74,16 @@ header {
     padding: 10px;
     border-radius: 15px;
     box-sizing: border-box;
+    position: relative;
 }
 
 #sidebar {
+    grid-column: 1;
+    height: 100%;
     background-color: #96CC8F;
     padding: 15px;
     margin-right: 10px;
-    width: 30%;
-    overflow: auto;
+    overflow-y: auto;
     border-radius: 15px;
     box-sizing: border-box;
 }
@@ -93,9 +96,8 @@ header {
 }
 
 #map {
-    flex: 3;
     height: 100%;
-    width: 65%;
+    grid-column: 2;
 }
 
 hr {
@@ -172,8 +174,10 @@ summary::before {
 /* ------- */
 
 .navBtn {
-    position: absolute;
-    display: flex;
+    grid-column: 2;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
 }
 
 #back {
