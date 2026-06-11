@@ -1,218 +1,233 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Pandanomics</title>
-        <link rel="icon" type="image/svg" href="pandaIcon1.svg">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v3.9.0/mapbox-gl.js'></script>
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v3.9.0/mapbox-gl.css' rel='stylesheet' />
-        <link rel="stylesheet" href="styles.css"/>
+/* colors: 
+#000000 black
+#FBFFF1 ivory 
+#317231 dark green
+#96CC8F light green
+#C9E6C0 lightest green
+*/
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <h1>Panda Diplomacy</h1>
-            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships.</h2>
-        </header>
+/* Structure */
 
-        <div id="main">
-            <section id="intro">
-                <article id="introText">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus mi et pretium finibus. Mauris consequat sed nunc sed commodo. Nullam velit augue, pharetra et eleifend at, pulvinar sit amet erat. Nunc quis enim sem. In eleifend nunc eu neque cursus iaculis. Suspendisse diam nulla, faucibus in metus eu, suscipit vestibulum lacus. Maecenas euismod eros at orci bibendum, vitae bibendum urna tempus. Maecenas ut efficitur arcu, nec imperdiet neque. In ut convallis sem. Nam id enim tristique, aliquet neque at, dapibus tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus mi et pretium finibus. Mauris consequat sed nunc sed commodo. Nullam velit augue, pharetra et eleifend at, pulvinar sit amet erat. Nunc quis enim sem. In eleifend nunc eu neque cursus iaculis.</p>
-                </article>
-            </section>
+html {
+    background-color: #FBFFF1;
+}
 
-            <br>
+header {
+    background-color: #317231;
+    text-align: center;
+    justify-content: center;
+    margin: 15px auto 25px auto;
+    width: 90%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 0 40px 25px 40px;
+}
 
-            
-            <section id="content">
-                <!-- Panel that shows up to the left of the map  -->
-                <section id="sidebar">
-                    <div id="sidebarHeader">
-                        <h1 id="zooName">Click on a panda marker to get started!</h1>
-                        <h2 id="country"></h2>
-                    </div>
-                    <article id="generalInfo"></article>
-                    <hr>
+#main {
+    margin: 0 auto;
+}
 
-                    <!-- Panda #1 -->
-                    <details class="panda hidden" id="panda1">
-                        <summary><p class="pandaName" id="pandaName1">Panda 1</p></summary>
-                        <div class="pandaCard">
-                            <img class="pandaImage" id="pandaImage1" src="https://sandiegozoowildlifealliance.org/sites/default/files/styles/3_2_aspect_ratio_hero_crop/public/2024-05/the-best-is-yet-to-come_1200x800.jpg?itok=NBnEIT_a" alt="A photo of the panda.">
-                            <p class="caption" id="caption1">Caption</p>
-                            <p id="pandaBirthdate1">Birthdate</p>
-                            <p id="pandaGender1">Gender</p>
-                            <p id="pandaLoanStart1">Loan Start</p>
-                            <p id="pandaLoanEnd1">Loan End</p>
-                        </div>
-                    </details>
+#intro {
+    display: flex;
+    margin: 0 auto;
+    width: 65%;
+    max-width: 2000px;
+    border-left: 10px solid #96CC8F;
+    border-right: 10px solid #96CC8F;
+    border-radius: 10px;
+}
 
-                    <!-- Panda #2 -->
-                    <details class="panda hidden" id="panda2">
-                        <summary><p class="pandaName" id="pandaName2">Panda 2</p></summary>
-                        <div class="pandaCard">
-                            <img class="pandaImage" id="pandaImage2" src="https://sandiegozoowildlifealliance.org/sites/default/files/styles/3_2_aspect_ratio_hero_crop/public/2024-05/the-best-is-yet-to-come_1200x800.jpg?itok=NBnEIT_a" alt="A photo of the panda.">
-                            <p class="caption" id="caption2">Caption</p>
-                            <p id="pandaBirthdate2">Birthdate</p>
-                            <p id="pandaGender2">Gender</p>
-                            <p id="pandaLoanStart2">Loan Start</p>
-                            <p id="pandaLoanEnd2">Loan End</p>
-                        </div>
-                    </details>
+#introText {
+    flex: 1;
+    padding: 10px 15px;
+    color: #000000;
+}
 
-                    <!-- Panda #3 -->
-                    <details class="panda hidden" id="panda3">
-                        <summary><p class="pandaName" id="pandaName3">Panda 3</p></summary>
-                        <div class="pandaCard">
-                            <img class="pandaImage" id="pandaImage3" src="https://sandiegozoowildlifealliance.org/sites/default/files/styles/3_2_aspect_ratio_hero_crop/public/2024-05/the-best-is-yet-to-come_1200x800.jpg?itok=NBnEIT_a" alt="A photo of the panda.">
-                            <p class="caption" id="caption3">Caption</p>
-                            <p id="pandaBirthdate3">Birthdate</p>
-                            <p id="pandaGender3">Gender</p>
-                            <p id="pandaLoanStart3">Loan Start</p>
-                            <p id="pandaLoanEnd3">Loan End</p>
-                        </div>
-                    </details>
+#content {
+    display: flex;
+    flex: 1;
+    background-color: #C9E6C0;
+    height: 900px;
+    max-height: 80vh;
+    min-height: 20vh;
+    width: 80%;
+    max-width: 2000px;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
 
-                    <!-- Panda #4 -->
-                    <details class="panda hidden" id="panda4">
-                        <summary><p class="pandaName" id="pandaName4">Panda 4</p></summary>
-                        <div class="pandaCard">
-                            <img class="pandaImage" id="pandaImage4" src="https://sandiegozoowildlifealliance.org/sites/default/files/styles/3_2_aspect_ratio_hero_crop/public/2024-05/the-best-is-yet-to-come_1200x800.jpg?itok=NBnEIT_a" alt="A photo of the panda.">
-                            <p class="caption" id="caption4">Caption</p>
-                            <p id="pandaBirthdate4">Birthdate</p>
-                            <p id="pandaGender4">Gender</p>
-                            <p id="pandaLoanStart4">Loan Start</p>
-                            <p id="pandaLoanEnd4">Loan End</p>
-                        </div>
-                    </details>
+.bamboo {
+    height: 550px;
+    position: fixed;
+    bottom: 0;
+}
 
-                    <!-- Data Credits -->
-                    <details class="credits hidden" id="dataSources">
-                        <summary><p class="dataCredits">Data Sources</p></summary>
-                        <div id="citations">
-                            <p id="sources"></p>
-                        </div>
-                    </details>
+#bamboo1 {
+    float: right;
+}
 
-                    <button type="info" id="data">Data Sources</button>
-                
-                </section>
+#sidebar {
+    background-color: #96CC8F;
+    padding: 15px;
+    margin-right: 10px;
+    width: 30%;
+    overflow: auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
 
-                 <div class="rightSide">
-                    <!-- Navigation button return to global view -->
-                    <button type="return" id="back">Return</button>
-                    <div id="map"></div>
-                 </div>
-            </section>
-        </div>
+#sidebarHeader {
+    background-color: #317231;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
-        <footer></footer>
+#map {
+    flex: 3;
+    height: 100%;
+    width: 65%;
+}
 
-        <script>
-            mapboxgl.accessToken = "pk.eyJ1Ijoibm1hbjQiLCJhIjoiY21wNXpycG5uMGdnNDJxbzhrYzF3cXhtZyJ9.FU0wGPTgG5sgUMMBkGRXXA";
-            
-            // Bounds
-            var bounds = [
-                [-179, -85], // Southwest [west, south] coordinates
-                [179, 85] // Northeast [east, north] coordinates 
-            ];
+.panda {
+    display: none;
+}
 
-            var map = new mapboxgl.Map({
-                container: 'map',
-                style: 'mapbox://styles/nman4/cmom1azlf003n01soadh5fl99',
-                center: [10,0],
-                minZoom: 0.5,       // Showing global scale so minZoom is very low so user can see the whole map
-                maxZoom: 8.5,       // Want user to see which city the zoo is in, but don't need them to see smaller streets, etc
-                maxBounds: bounds,
-                zoom: 0.8
-            });
+.pandaCard {
+    background-color: #C9E6C0;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
 
-            // Navigation controls
-            const nav = new mapboxgl.NavigationControl({
-                showCompass: false      // Orientation isn't crucial for this map
-            });
-            map.addControl(nav, 'bottom-right');    // Set in a noticeable place
+.pandaImage {
+    height: 175px;
+    border-radius: 15px;
+}
 
-            // In the sidepanel, get user back to global view
-            const returnButton = document.getElementById("back");
-            returnButton.addEventListener('click', () => {
-                map.setZoom(0.8);
-                map.setCenter([10, 0]);
-            })
-            
-            let pandaDataFetch = [];
+hr {
+    border: none;
+    background-color: #317231;
+    height: 3px;
+    width: 60%;
+    border-radius: 1.5px;
+    justify-content: left;
+}
 
-            // I learned about async functions and the 'await' command through documentation (https://www.w3schools.com/js/js_async.asp) and Google Gemini.
-            // This function runs automatically and loads in data from the json asynchronously, allowing other parts of the program to run and preventing the page from crashing while data from the file is pulled in.
-            async function initializeData() {
-                const response = await fetch('pandaData.json');     
-                pandaDataFetch = await response.json();
-                enableMapInteractions();        // Once the data from the json has been fetched, the program runs a function that enables interaction on the map. This prevents errors during runtime and ensures data is loaded before the user can click on the map.
-            }
-            initializeData();
+button {
+    border: none;
+    background-color: #317231;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 15px 32px;
+    font-family: "Elms Sans", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
-            // Function that turns on interaction and listens for clicks, populating the sidebar with different data once interacted with.
-            function enableMapInteractions() {
-                // Listen for clicks on the points layer.
-                map.on('click', 'panda-locations', async(e) => {
-                if (e.features && e.features.length > 0) {      // Accesses Mapbox attributes based on clicked location.
-                    const clickedZoo = e.features[0].properties.Zoo;    // Creates variable that holds the name of the clicked zoo.
-                    console.log('Feature clicked:', clickedZoo);
-                    
-                    const matchedZoo = pandaDataFetch.find(item => item.ZOO === clickedZoo);    // Variable that finds the correct zoo in the data from the json.
-                    
-                    if (matchedZoo) {   // Makes sure target zoo is in the json
-                        const coordinates = [matchedZoo.LONGITUDE, matchedZoo.LATITUDE];
-                        map.flyTo({     // Zooms map to center on the target zoo
-                            center: coordinates,
-                            zoom: 6.5
-                        });
-                        
-                        // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked. It ensures that each of the "panda cards" are set to not display so that they get populated correctly later in the code. 
-                        document.querySelectorAll('.panda').forEach(div => {
-                            div.classList.add('hidden');
-                            div.classList.remove('open');
-                        });
-                        
-                        // Populates the data fields in the side panel
-                        document.getElementById('zooName').textContent = matchedZoo.ZOO;
-                        document.getElementById('country').textContent = matchedZoo.COUNTRY;
-                        document.getElementById('generalInfo').textContent = matchedZoo.GENERAL_INFO;
+#back {
+    border-radius: 3px;
+    text-align: center;
+    position: absolute;
+}
 
-                        // Populate data credits
-                        for (let j=1; j<=5; j++) {
-                            const citation = `CITATION_${j}`;
-                            if (matchedZoo[citation]) {
-                                const newP = document.createElement("p");
-                                newP.textContent = matchedZoo[citation];
-                                document.getElementById('citations').append(newP);
-                            }
-                        }
-                        // I got help from Joanna to figure out how to pull data in from the json and populate the sidebar.
-                        // I learned how to use template literals in javascript through this website: https://www.geeksforgeeks.org/javascript/javascript-template-literals. I wanted to make the loop dynamic but wasn't sure how to do so in javascript, so this resource helped me understand the syntax. I did use Google Gemini to understand how to use the i variable in the matchedZoo.property const. 
-                        for (let i=1; i<=4; i++) {
-                            if (matchedZoo[`NAME_${i}`]) {
-                                document.getElementById(`pandaName${i}`).textContent = matchedZoo[`NAME_${i}`];
-                                document.getElementById(`pandaImage${i}`).src = matchedZoo[`IMAGE_${i}`];
-                                document.getElementById(`caption${i}`).textContent = `Photo of ${matchedZoo[`NAME_${i}`]}. Photo credit: ${matchedZoo[`IMAGE_CREDIT_${i}`]}`;
-                                document.getElementById(`pandaGender${i}`).textContent = `Gender: ${matchedZoo[`GENDER_${i}`]}`;
-                                document.getElementById(`pandaBirthdate${i}`).textContent = `Born: ${matchedZoo[`BORN_${i}`]}`;
-                                document.getElementById(`pandaLoanStart${i}`).textContent = `Loan start: ${matchedZoo[`LOAN_START_${i}`]}`;
-                                document.getElementById(`pandaLoanEnd${i}`).textContent = `Loan end: ${matchedZoo[`LOAN_END_${i}`]}`;
-                                document.getElementById(`panda${i}`).classList.remove('hidden');
-                                document.getElementById(`panda${i}`).style.display = "block";
-                        }
-                    }
-                }
-            }});
-            }
-            
-        </script>
-    </body>
-</html>
+#generalInfo {
+    margin: 10px 0px;
+}
+
+summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+summary::before {
+    content: "";
+    display: inline-block;
+    flex-shrink: 0;
+    height: 20px;
+    width: 20px;
+    margin-right: 7px;
+    background-image: url('pandaIcon1.svg'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer {
+    height: 5vh;
+    padding: 10px;
+    justify-items: center;
+}
+
+/* Fonts */
+
+
+.lemonada-regular {
+  font-family: "Lemonada", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.elms-sans-regular {
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Typography */
+h1 {
+    font-family: "Lemonada", cursive;
+    font-size: 4em;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px auto;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: "Elms Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2em;
+    color: #FFFFFF;
+    margin: 0px auto;
+}
+
+#zooName {
+    font-family: "Lemonada", cursive;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2em;
+    color: #FFFFFF;
+    line-height: 1.2;
+}
+    
+#country {
+    font-family: "Elms Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5em;
+    color: #FFFFFF;
+}
+
+p, #generalInfo {
+    font-size: 1em;
+    font-family: "Elms Sans", sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+
+.pandaName {
+    font-family: "Lemonada", cursive;
+}
