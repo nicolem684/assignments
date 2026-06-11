@@ -21,7 +21,10 @@
     "LOAN_START_2": "arrived June 2024",
     "LOAN_END_2": "2034",
     "IMAGE_2": "https://zoo.sandiegozoo.org/sites/default/files/2024-06/6027_SDZ24_Giant-Pandas-Digital-User-Journey_Landing_xin-bao_web-image_750x750.jpg",
-    "IMAGE_CREDIT_2": "https://zoo.sandiegozoo.org/giant-pandas"
+    "IMAGE_CREDIT_2": "https://zoo.sandiegozoo.org/giant-pandas",
+    "CITATION_1": "Giant Panda Global. (n.d.). San Diego Zoo. https://www.giantpandaglobal.com/en/zoo/san-diego-zoo",
+    "CITATION_2": "Price, M. (2024, August 8). How many pandas does the San Diego Zoo have? More about the pair from China. AP News. https://apnews.com/article/how-many-pandas-san-diego-zoo-china-f2dd7f98663d61dff1f593f15db85687",
+    "CITATION_3": "CBS 8 Staff. (2025, August 8). One year since giant pandas made their debut at the San Diego Zoo. CBS 8. https://www.cbs8.com/article/entertainment/places/san-diego-zoo/one-year-since-giant-pandas-made-their-debut-at-the-san-diego-zoo/509-8ad9b4f5-5d33-435d-adfb-627ccb319916"
   },
   {
     "ZOO": "Smithsonian's National Zoological Park",
@@ -45,7 +48,10 @@
     "LOAN_START_2": "Oct 2024",
     "LOAN_END_2": "April 2034",
     "IMAGE_2": "https://nationalzoo.si.edu/sites/default/files/2024-10/qing%20bao.png",
-    "IMAGE_CREDIT_2": "https://nationalzoo.si.edu/dcpandas"
+    "IMAGE_CREDIT_2": "https://nationalzoo.si.edu/dcpandas",
+    "CITATION_1": "Smithsonian’s National Zoo and Conservation Biology Institute. (n.d.). Giant pandas are here! https://nationalzoo.si.edu/dcpandas",
+    "CITATION_2": "Giant Panda Global. (n.d.). Smithsonian’s National Zoological Park. https://www.giantpandaglobal.com/en/zoo/smithsonians-national-zoological-park",
+    "CITATION_3": "Smithsonian’s National Zoo and Conservation Biology Institute. (n.d.). Giant panda FAQs. https://nationalzoo.si.edu/animals/giant-panda-faqs"
   },
   {
     "ZOO": "Chapultepec Zoo",
@@ -61,7 +67,9 @@
     "LOAN_START_1": "July 1990",
     "LOAN_END_1": "",
     "IMAGE_1": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/rockcms/2022-11/221118-xin-xin-panda-mexico-city-mjf-1417-c2aaee.jpg",
-    "IMAGE_CREDIT_1": "https://www.nbcnews.com/news/latino/last-panda-latin-america-mexico-decide-happens-rcna57921"
+    "IMAGE_CREDIT_1": "https://www.nbcnews.com/news/latino/last-panda-latin-america-mexico-decide-happens-rcna57921",
+    "CITATION_1": "Giant Panda Global. (n.d.). Chapultepec Zoo. https://www.giantpandaglobal.com/en/zoo/chapultepec-zoo",
+    "CITATION_2": "Acevedo, N. (2022, December 1). The last panda in Latin America: Mexico to decide what happens next. NBC News. https://www.nbcnews.com/news/latino/last-panda-latin-america-mexico-decide-happens-rcna57921"
   },
   {
     "ZOO": "Zoo Madrid",
@@ -85,7 +93,10 @@
     "LOAN_START_2": "April 2024",
     "LOAN_END_2": "2034",
     "IMAGE_2": "https://www.zoomadrid.com/content/zoo/en/nuevos-pandas/_jcr_content/responsiveGrid/cc43_tabsanchor_copy/container_0/cc18_columns_6027488_973124429/col_1/cc18_columns/col_2/ca03_image_copy_copy.coreimg.jpeg/1716911488321/zoo-madrid-zhu-yu.jpeg",
-    "IMAGE_CREDIT_2": "https://www.zoomadrid.com/en/nuevos-pandas"
+    "IMAGE_CREDIT_2": "https://www.zoomadrid.com/en/nuevos-pandas",
+    "CITATION_1": "United Press International. (1983, October 24). Shao Shao, the first giant panda in the West to... UPI Archives. https://www.upi.com/Archives/1983/10/24/Shao-Shao-the-first-giant-panda-in-the-West-to/8877435816000/",
+    "CITATION_2": "China Daily. (2017, April 7). Panda couple celebrates 10th anniversary in Madrid. https://www.chinadaily.com.cn/a/201704/07/WS59bb43fba310d4d9ab7e1dac.html",
+    "CITATION_3": "Bernama. (2024, May 31). New giant panda couple makes debut in Madrid Zoo. https://www.bernama.com/en/news.php?id=2303263"
   },
   {
     "ZOO": "ZooParc de Beauval",
@@ -109,7 +120,12 @@
     "LOAN_START_2": "Aug 2021",
     "LOAN_END_2": "Jan 2027",
     "IMAGE_2": "https://parrainages.zoobeauval.com/thumbnail/6fa1adcb-3698-473e-9b73-65d1590af34a/huanlili-05.jpg?w=1200&h=1200&fit=crop&s=fb149bf2c896cdc3bf64d97fa423af64",
-    "IMAGE_CREDIT_2": "https://www.zoobeauval.com/en/zooparc/animals/giant-panda"
+    "IMAGE_CREDIT_2": "https://www.zoobeauval.com/en/zooparc/animals/giant-panda",
+    "CITATION_1": "Deutsche Welle. (2025, November 27). France's first giant pandas head back to China. https://www.dw.com/en/frances-first-giant-pandas-head-back-to-china/a-74884949",
+    "CITATION_2": "CCTV English. (2025, December 6). Giant pandas Yuan Zi and Huan Huan bid farewell to France. https://english.cctv.com/2025/12/06/VIDEAQTOPPjZzfdHw11YD7kk251206.shtml",
+    "CITATION_3": "ZooParc de Beauval. (2021). Giant panda twin cubs 2021. https://www.zoobeauval.com/en/giant-panda-twin-cubs-2021",
+    "CITATION_4": "Gan, N. (2025, November 25). France's pandas are heading back to China as lease ends. CNN. https://www.cnn.com/2025/11/25/china/france-pandas-return-to-china-intl-hnk",
+    "CITATION_5": "ZooParc de Beauval. (n.d.). Saga des pandas. https://www.zoobeauval.com/en/zooparc/saga-des-pandas"
   },
   {
     "ZOO": "Pairi Daiza",
@@ -125,7 +141,10 @@
     "LOAN_START_1": "Feb 2014",
     "LOAN_END_1": "2029",
     "IMAGE_1": "https://cms.pairidaiza.eu/thumbor/Z1WLBneKmy6GMHEB9n9fRoCPmk4=/fit-in/320x/filters:quality(92)/--/uploads/2024/02/BEN_0093-1-e1707825877933.jpg",
-    "IMAGE_CREDIT_1": "https://www.pairidaiza.eu/en/worlds/the-middle-kingdom/giant-panda/"
+    "IMAGE_CREDIT_1": "https://www.pairidaiza.eu/en/worlds/the-middle-kingdom/giant-panda/",
+    "CITATION_1": "Pairi Daiza. (n.d.). The Middle Kingdom: Giant panda. https://www.pairidaiza.eu/en/worlds/the-middle-kingdom/giant-panda/",
+    "CITATION_2": "China Daily. (2024, December 11). Belgian zoo bids emotional farewell to giant pandas. https://www.chinadaily.com.cn/a/202412/11/WS6758ead6a310f1265a1d23da.html",
+    "CITATION_3": "Panda News. (2009, September 9). Xing Hui. https://pandanews.org/the-pandas/200909_xing-hui.html"
   },
   {
     "ZOO": "Ouwehands Dierenpark Rhenen",
@@ -157,7 +176,13 @@
     "LOAN_START_3": "July 2024",
     "LOAN_END_3": "2026-2028",
     "IMAGE_3": "https://www.ouwehand.nl/uploads/banners/small_medium/1200x320/lang-yue-zichtbaar.png",
-    "IMAGE_CREDIT_3": "https://www.ouwehand.nl/nl/nieuws/pandajong-lang-yue-laat-zich-deze-week-zien-in-ouwehands-dierenpark?_gl=1*17wmsvp*_up*MQ..*_ga*NzI0OTYyNDM3LjE3ODA5ODI0NjY.*_ga_2Z547VJHYF*czE3ODA5ODI0NjUkbzEkZzAkdDE3ODA5ODI0ODMkajQyJGwwJGgw"
+    "IMAGE_CREDIT_3": "https://www.ouwehand.nl/nl/nieuws/pandajong-lang-yue-laat-zich-deze-week-zien-in-ouwehands-dierenpark?_gl=1*17wmsvp*_up*MQ..*_ga*NzI0OTYyNDM3LjE3ODA5ODI0NjY.*_ga_2Z547VJHYF*czE3ODA5ODI0NjUkbzEkZzAkdDE3ODA5ODI0pxMkajQyJGwwJGgw",
+    "CITATION_1": "Giant Panda Global. (n.d.). Ouwehands Dierenpark Rhenen. https://www.giantpandaglobal.com/en/zoo/ouwehands-dierenpark-rhenen",
+    "CITATION_2": "Ouwehands Dierenpark. (n.d.). Pandasia. https://www.ouwehand.nl/nl/ontdekken/pandasia",
+    "CITATION_3": "CGTN. (2020, May 2). First giant panda born in the Netherlands. https://news.cgtn.com/news/2020-05-02/First-giant-panda-born-in-the-Netherlands-QaGQJdVwm4/index.html",
+    "CITATION_4": "Panda Tribe. (n.d.). Panda Xing Ya: A symbol of exchange between China and Netherlands. https://pandatribe.org/panda-xing-ya-a-symbol-of-exchang-between-china-and-netherlands/",
+    "CITATION_5": "Panda Tribe. (n.d.). Panda Wu Wen: The princess among the Dutch public. https://pandatribe.org/panda-wu-wen-the-princess-among-the-dutch-public/",
+    "CITATION_6": "Dutch News. (2024, July 12). Twin baby pandas born in Dutch zoo, but one dies soon afterwards. https://www.dutchnews.nl/2024/07/twin-baby-pandas-born-in-dutch-zoo-but-one-dies-soon-afterwards/"
   },
   {
     "ZOO": "Zoo Berlin",
@@ -197,7 +222,13 @@
     "LOAN_START_4": "Aug 2024",
     "LOAN_END_4": "2026-2028",
     "IMAGE_4": "https://dims.apnews.com/dims4/default/ea4f0fc/2147483647/strip/true/crop/6743x4495+0+0/resize/945x630!/format/webp/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F69%2Ff9%2F6590c657553643bd71e02cdee1fb%2F04043b4f566349b2900020715c5cfd76",
-    "IMAGE_CREDIT_4": "https://apnews.com/photo-gallery/giant-pandas-birthday-berlin-zoo-2091354f6a5e25955dc813ddee41d70f"
+    "IMAGE_CREDIT_4": "https://apnews.com/photo-gallery/giant-pandas-birthday-berlin-zoo-2091354f6a5e25955dc813ddee41d70f",
+    "CITATION_1": "Giant Panda Global. (n.d.). Zoo Berlin. https://www.giantpandaglobal.com/en/zoo/zoo-berlin",
+    "CITATION_2": "Zoo Berlin. (n.d.). Giant panda. https://www.zoo-berlin.de/en/artenschutz/weltweit/giant-panda",
+    "CITATION_3": "Zoo Berlin. (n.d.). Panda Garden. https://www.zoo-berlin.de/en/explore-the-zoo/panda-garden",
+    "CITATION_4": "Associated Press. (2025, August 22). Berlin Zoo celebrates birthday of twin panda cubs Leni and Lotti. AP News. https://apnews.com/article/germany-berlin-zoo-pandas-birthday-leni-lotti-f636df8a187cfbc7cd192f5a96a05134",
+    "CITATION_5": "Global Times. (2017, June 24). Giant pandas \"Meng Meng\" and \"Jiao Qing\" arrive in Berlin. https://www.globaltimes.cn/page/201706/1053282.shtml",
+    "CITATION_6": "Global Times. (2026, January 23). Berlin Zoo pandas preparing for return journey to China. https://www.globaltimes.cn/page/202601/1353870.shtml"
   },
   {
     "ZOO": "Zoo Kobenhavn",
@@ -221,7 +252,11 @@
     "LOAN_START_2": "Apr 2019",
     "LOAN_END_2": "2034",
     "IMAGE_2": "https://pandatribe.org/wp-content/uploads/2024/07/panda-mao-sun-1024x575.webp",
-    "IMAGE_CREDIT_2": "https://pandatribe.org/panda-mao-sun-a-tough-girl/"
+    "IMAGE_CREDIT_2": "https://pandatribe.org/panda-mao-sun-a-tough-girl/",
+    "CITATION_1": "Giant Panda Global. (n.d.). Zoo København. https://www.giantpandaglobal.com/en/zoo/zoo-kobenhavn",
+    "CITATION_2": "The Copenhagen Post. (2024, December 30). Copenhagen Zoo still waits for the pandas to mate. https://cphpost.dk/2024-12-30/general/copenhagen-zoo-still-waits-for-the-pandas-to-mate/",
+    "CITATION_3": "Panda Tribe. (n.d.). Panda Xing Er: Little bald head. https://pandatribe.org/panda-xing-er-little-bald-head/",
+    "CITATION_4": "Panda Tribe. (n.d.). Panda Mao Sun: A tough girl. https://pandatribe.org/panda-mao-sun-a-tough-girl/"
   },
   {
     "ZOO": "Tiergarten Schonbrunn",
@@ -245,7 +280,10 @@
     "LOAN_START_2": "Apr 2025",
     "LOAN_END_2": "2035",
     "IMAGE_2": "https://www.globaltimes.cn/Portals/0/attachment/2025/2025-04-23/5cdaa37f-dfde-4859-9c91-198946d92b49.jpeg",
-    "IMAGE_CREDIT_2": "https://www.globaltimes.cn/page/202504/1332668.shtml, Photo from CCRCGP"
+    "IMAGE_CREDIT_2": "https://www.globaltimes.cn/page/202504/1332668.shtml, Photo from CCRCGP",
+    "CITATION_1": "Giant Panda Global. (n.d.). Tiergarten Schönbrunn. https://www.giantpandaglobal.com/en/zoo/tiergarten-schonbrunn",
+    "CITATION_2": "ECNS. (2025, April 23). Schönbrunn Zoo upgrades panda habitat ahead of new arrivals. http://www.ecns.cn/m/news/cns-wire/2025-04-23/detail-iheqvnys2374491.shtml",
+    "CITATION_3": "Global Times. (2025, April 23). Vienna’s Schönbrunn Zoo readies for new giant panda cooperative research phase. https://www.globaltimes.cn/page/202504/1332668.shtml"
   },
   {
     "ZOO": "Moscow Zoo",
@@ -277,7 +315,11 @@
     "LOAN_START_3": "Aug 2023",
     "LOAN_END_3": "2026-2027",
     "IMAGE_3": "https://english.news.cn/europe/20250825/674ee0136d0d41109ebaaadc0336ded5/20250825674ee0136d0d41109ebaaadc0336ded5_20250825e0b8eb4001a043818a0fb42848058fe0.jpg",
-    "IMAGE_CREDIT_3": "https://english.news.cn/europe/20250825/674ee0136d0d41109ebaaadc0336ded5/c.html"
+    "IMAGE_CREDIT_3": "https://english.news.cn/europe/20250825/674ee0136d0d41109ebaaadc0336ded5/c.html",
+    "CITATION_1": "Giant Panda Global. (n.d.). Moscow Zoo. https://www.giantpandaglobal.com/en/zoo/moscow-zoo",
+    "CITATION_2": "Panda Tribe. (n.d.). Panda Ru Yi: A star in Moscow Zoo. https://pandatribe.org/panda-ru-yi-a-star-in-moscow-zoo/",
+    "CITATION_3": "Panda Tribe. (n.d.). Panda Ding Ding: Princess of Moscow Zoo. https://pandatribe.org/panda-ding-ding-princess-of-moscow-zoo/",
+    "CITATION_4": "People's Daily Online. (2024, July 31). First giant panda cub born in Russia celebrates first birthday. English.people.cn. https://en.people.cn/n3/2024/0731/c90000-20200358.html"
   },
   {
     "ZOO": "Panda House",
@@ -301,7 +343,12 @@
     "LOAN_START_2": "Oct 2022",
     "LOAN_END_2": "2037",
     "IMAGE_2": "https://oss.imsilkroad.com/source/image/2022/11/18/4ea3bdb56c704672990897f0f19d0774.png",
-    "IMAGE_CREDIT_2": "https://en.imsilkroad.com/p/331209.html"
+    "IMAGE_CREDIT_2": "https://en.imsilkroad.com/p/331209.html",
+    "CITATION_1": "Giant Panda Global. (n.d.). Panda House. https://www.giantpandaglobal.com/en/zoo/panda-house",
+    "CITATION_2": "NBC News. (2022, October 19). China sends giant pandas to Qatar ahead of World Cup. https://www.nbcnews.com/news/world/china-pandas-qatar-rcna53104",
+    "CITATION_3": "Karam, J. (2024). Panda diplomacy in the Middle East: China’s soft power in Qatar. Journal of Middle Eastern Wildlife Studies [or relevant Project MUSE journal if applicable]. https://muse.jhu.edu/pub/43/article/936309",
+    "CITATION_4": "Panda Tribe. (n.d.). Panda Jing Jing: The first panda living in the Middle East. https://pandatribe.org/panda-jing-jing-the-first-panda-living-in-the-middle-east/",
+    "CITATION_5": "Panda Tribe. (n.d.). Panda Si Hai: A symbol of international friendship. https://pandatribe.org/panda-si-hai-a-symbol-of-international-friendship/"
   },
   {
     "ZOO": "Zoo Negara Malaysia",
@@ -325,7 +372,9 @@
     "LOAN_START_2": "Nov 2025",
     "LOAN_END_2": "2035",
     "IMAGE_2": "https://english.news.cn/asiapacific/20260110/d7a365799dd942129d233a5e4cb35538/gfLHsugexaGarQXz.jpeg",
-    "IMAGE_CREDIT_2": "https://english.news.cn/asiapacific/20260110/d7a365799dd942129d233a5e4cb35538/c.html"
+    "IMAGE_CREDIT_2": "https://english.news.cn/asiapacific/20260110/d7a365799dd942129d233a5e4cb35538/c.html",
+    "CITATION_1": "Giant Panda Global. (n.d.). Zoo Negara Malaysia. https://www.giantpandaglobal.com/en/zoo/zoo-negara-malaysia",
+    "CITATION_2": "Asia News Network. (2024, April 16). Giant pandas Chen Xing and Xiao Yue arrive in Malaysia. https://asianews.network/giant-pandas-chen-xing-and-xiao-yue-arrive-in-malaysia/"
   },
   {
     "ZOO": "Mandai River Wonders",
@@ -349,7 +398,11 @@
     "LOAN_START_2": "Sep 2012",
     "LOAN_END_2": "2027",
     "IMAGE_2": "https://www.mandai.com/content/dam/mandai/press-room/2022/rw-nr-panda-extension/Jia%20Jia%20(220311RW_E3A0307).jpg",
-    "IMAGE_CREDIT_2": "https://www.mandai.com/en/about-mandai/media-centre/Giant-Pandas-Kai-Kai-and-Jia-Jia-to-call-Singapore-home-for-another-five-years.html"
+    "IMAGE_CREDIT_2": "https://www.mandai.com/en/about-mandai/media-centre/Giant-Pandas-Kai-Kai-and-Jia-Jia-to-call-Singapore-home-for-another-five-years.html",
+    "CITATION_1": "Giant Panda Global. (n.d.). Mandai River Wonders. https://www.giantpandaglobal.com/en/zoo/mandai-river-wonders",
+    "CITATION_2": "Mandai Wildlife Reserve. (n.d.). Giant panda. River Wonders. https://www.mandai.com/en/river-wonders/animals-and-zones/giant-panda.html",
+    "CITATION_3": "CapitaLand. (2021, August 15). Media statement: CapitaLand welcomes the birth of Singapore’s first baby panda by Kai Kai and Jia Jia [Press release]. https://www.capitaland.com/content/dam/capitaland-newsroom/International/2021/august/kai-kai-jia-jia-first-panda-baby/Media_Statement_CapitaLand-welcomes-the-birth-of-Singapores-first-baby-panda-by-Kai-Kai-and-Jia-Jia.pdf",
+    "CITATION_4": "CBS News. (2012, September 6). Pandas start their journey in Singapore. https://www.cbsnews.com/pictures/pandas-start-their-journey-in-singapore/"
   },
   {
     "ZOO": "Taman Safari Indonesia",
@@ -381,7 +434,10 @@
     "LOAN_START_3": "Nov 2025",
     "LOAN_END_3": "2027-2029",
     "IMAGE_3": "https://tamansafari.com/rio-the-panda/wp-content/uploads/sites/17/2026/04/Edited-1-1024x1024.jpg",
-    "IMAGE_CREDIT_3": "https://tamansafari.com/rio-the-panda/"
+    "IMAGE_CREDIT_3": "https://tamansafari.com/rio-the-panda/",
+    "CITATION_1": "Giant Panda Global. (n.d.). Taman Safari Indonesia. https://www.giantpandaglobal.com/en/zoo/taman-safari-indonesia",
+    "CITATION_2": "Asia News Network. (2024, June 3). Indonesia welcomes first panda born in the country. https://asianews.network/indonesia-welcomes-first-panda-born-in-the-country/",
+    "CITATION_3": "Voice of America. (2017, September 28). Giant Chinese pandas arrive in Indonesia. VOA News. https://www.voanews.com/a/giant-chinese-pandas-arrive-in-indonesia/4047759.html"
   },
   {
     "ZOO": "Adelaide Zoo",
@@ -405,7 +461,9 @@
     "LOAN_START_2": "Dec 2024",
     "LOAN_END_2": "2034",
     "IMAGE_2": "https://www.adelaidezoo.com.au/wp-content/uploads/sites/2/animals/2024/08/Yi-Lan.jpg",
-    "IMAGE_CREDIT_2": "https://www.adelaidezoo.com.au/animals/giant-panda-xing-qiu-and-yi-lan/"
+    "IMAGE_CREDIT_2": "https://www.adelaidezoo.com.au/animals/giant-panda-xing-qiu-and-yi-lan/",
+    "CITATION_1": "Giant Panda Global. (n.d.). Adelaide Zoo. https://www.giantpandaglobal.com/en/zoo/adelaide-zoo",
+    "CITATION_2": "China Daily. (2024, December 14). Adelaide Zoo welcomes new giant panda pair. https://www.chinadaily.com.cn/a/202412/14/WS675d6de1a310f1265a1d2ea3.html"
   },
   {
     "ZOO": "Everland Resort",
@@ -445,7 +503,12 @@
     "LOAN_START_4": "Aug 2023",
     "LOAN_END_4": "2026-2027",
     "IMAGE_4": "https://news.samsungcnt.com/upload/2.0/wp-content/uploads/sites/3/2024/10/1200px-The-Unique-Character-and-Charm-of-Everlands-Bao-Panda-Family-1024x536.jpg",
-    "IMAGE_CREDIT_4": "https://news.samsungcnt.com/en/features/resort/2024-10-keeping-up-with-the-bao-family-everlands-adorable-pandas-are-full-of-charm-and-personality/"
+    "IMAGE_CREDIT_4": "https://news.samsungcnt.com/en/features/resort/2024-10-keeping-up-with-the-bao-family-everlands-adorable-pandas-are-full-of-charm-and-personality/",
+    "CITATION_1": "Giant Panda Global. (n.d.). Everland Resort. https://www.giantpandaglobal.com/en/zoo/everland-resort",
+    "CITATION_2": "Association of Zoos and Aquariums. (2023, July 11). Giant panda cubs born at Everland Zoo. AZA Connect Stories. https://www.aza.org/connect-stories/stories/giant-panda-cubs-born-at-everland-zoo",
+    "CITATION_3": "Korea Travel Easy. (n.d.). Everland Panda World South Korea Guide. https://www.koreatraveleasy.com/post/everland-panda-south-korea/",
+    "CITATION_4": "Panda Tribe. (n.d.). Panda Yuan Xin: The charismatic ambassador. https://pandatribe.org/panda-yuan-xin-the-charismatic-ambassador/",
+    "CITATION_5": "Panda Tribe. (n.d.). Panda Hua Ni (Ai Bao): Bridging cultures and conservation efforts. https://pandatribe.org/panda-hua-ni-ai-bao-bridging-cultures-and-conservation-efforts/"
   },
   {
     "ZOO": "Taipei Zoo",
@@ -477,6 +540,10 @@
     "LOAN_START_3": "June 2020",
     "LOAN_END_3": "",
     "IMAGE_3": "https://www-ws.gov.taipei/001/Upload/433/relpic/31011/9381449/199aad75-de1e-48fe-a2a6-2db4ca983790.jpg",
-    "IMAGE_CREDIT_3": "https://english.zoo.gov.taipei/News_Content.aspx?n=C9FB393E85F4A2B6&sms=DFFA119D1FD5602C&s=7FA43A443B88DEA4"
+    "IMAGE_CREDIT_3": "https://english.zoo.gov.taipei/News_Content.aspx?n=C9FB393E85F4A2B6&sms=DFFA119D1FD5602C&s=7FA43A443B88DEA4",
+    "CITATION_1": "The China Post. (2008, January 9). Taiwan rejects China's panda offer. WayBack Machine Archive. https://web.archive.org/web/20120305163019/http://www.chinapost.com.tw/taiwan/2008/01/09/138299/Taiwan-rejects.htm",
+    "CITATION_2": "BBC News. (2008, December 23). Taiwan welcomes China panda gift. http://news.bbc.co.uk/2/hi/asia-pacific/7796312.stm",
+    "CITATION_3": "Associated Press. (2024, August 30). Panda at Taipei Zoo celebrates birthday amid cross-strait politics. AP News. https://apnews.com/article/panda-taiwan-birthday-china-politics-9d34f6a06d0e0eaaae78257536bb8462",
+    "CITATION_4": "Giant Panda Global. (n.d.). Taipei Zoo. https://www.giantpandaglobal.com/en/zoo/taipei-zoo"
   }
 ]
