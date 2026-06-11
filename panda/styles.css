@@ -6,9 +6,31 @@
 #C9E6C0 lightest green
 */
 
-/* Structure */
+/* ----- */
+/* Fonts */
+/* ----- */ 
 
-html {
+.lemonada-regular {
+  font-family: "Lemonada", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.elms-sans-regular {
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* --------- */
+/* Structure */
+/* --------- */
+
+body {
+    font-family: "Elms Sans", sans-serif;
     background-color: #FBFFF1;
 }
 
@@ -116,6 +138,10 @@ hr {
     justify-content: left;
 }
 
+.rightSide {
+    height: 100%;
+}
+
 button {
     border: none;
     background-color: #317231;
@@ -131,12 +157,10 @@ button {
     cursor: pointer;
 }
 
-/* Positioning from assignment 6 */
 #back {
     border-radius: 3px;
     text-align: center;
-    display: inline-block; /* displays over the map */
-    position: relative; /* displays over the map */
+    position: absolute;
 }
 
 #generalInfo {
@@ -168,23 +192,7 @@ footer {
     justify-items: center;
 }
 
-/* Fonts */
 
-
-.lemonada-regular {
-  font-family: "Lemonada", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-.elms-sans-regular {
-  font-family: "Elms Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
 
 
 /* Typography */
