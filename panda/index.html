@@ -17,7 +17,7 @@
     <body>
         <header>
             <h1>Panda Diplomacy</h1>
-            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships</h2>
+            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships. Loaded!</h2>
         </header>
 
         <div id="main">
@@ -177,8 +177,9 @@
 
                         // Populate data credits
                         for (let j=1; j<=5; j++) {
-                            if (matchedZoo[`CITATION_${j}`]) {
-                                document.getElementById('citations').textContent += matchedZoo[`CITATION_${j}`];
+                            const citation = `CITATION_${j}`;
+                            if (matchedZoo[citation]) {
+                                document.getElementById('citations').textContent += matchedZoo[citation] + '\n';
                             }
                         }
                         // I got help from Joanna to figure out how to pull data in from the json and populate the sidebar.
