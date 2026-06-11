@@ -167,6 +167,7 @@ summary::before {
 
 .caption {
     overflow: wrap;
+    font-size: 0.5em;
 }
 
 /* ------- */
