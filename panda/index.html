@@ -17,7 +17,7 @@
     <body>
         <header>
             <h1>Panda Diplomacy</h1>
-            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships. Loaded!</h2>
+            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships</h2>
         </header>
 
         <div id="main">
@@ -168,7 +168,10 @@
                         });
                         
                         // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked. It ensures that each of the "panda cards" are set to not display so that they get populated correctly later in the code. 
-                        document.querySelectorAll('.panda').forEach(div => div.classList.add('hidden'));
+                        document.querySelectorAll('.panda').forEach(div => {
+                            div.classList.add('hidden');
+                            div.classList.remove('open');
+                        });
                         
                         // Populates the data fields in the side panel
                         document.getElementById('zooName').textContent = matchedZoo.ZOO;
@@ -200,7 +203,6 @@
                 }
             }});
             }
-            
         </script>
     </body>
 </html>
