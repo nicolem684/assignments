@@ -159,10 +159,6 @@ summary::before {
     background-repeat: no-repeat;
 }
 
-#dataSources::before {
-    display: none;
-}
-
 .caption {
     overflow: wrap;
     font-size: 0.7em;
