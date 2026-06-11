@@ -172,7 +172,7 @@ summary::before {
     position: absolute;
     display: flex;
     top: 15px;
-    left: 15px;
+    right: 15px;
     z-index: 1000;
 }
 
