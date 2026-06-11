@@ -93,7 +93,7 @@
                     </details>
 
                 <!-- Navigation button in the sidepanel -->
-                <button type="return" id="back">Back</button>
+                <button type="button" id="back">Back</button>
                 </section>
 
                 <div id="map"></div>
@@ -163,7 +163,10 @@
                         });
                         
                         // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked. It ensures that each of the "panda cards" are set to not display so that they get populated correctly later in the code. 
-                        document.querySelectorAll('.panda').forEach(div => div.classList.add('hidden'));
+                        document.querySelectorAll('.panda').forEach(div => {
+                            div.classList.add('hidden');
+                            div.style.display = "none";
+                        });
                         
                         // Populates the data fields in the side panel
                         document.getElementById('zooName').textContent = matchedZoo.ZOO;
