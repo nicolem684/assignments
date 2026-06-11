@@ -131,10 +131,12 @@ button {
     cursor: pointer;
 }
 
+/* Positioning from assignment 6 */
 #back {
     border-radius: 3px;
     text-align: center;
-    position: absolute;
+    display: inline-block; /* displays over the map */
+    position: relative; /* displays over the map */
 }
 
 #generalInfo {
