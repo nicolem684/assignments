@@ -17,7 +17,7 @@
     <body>
         <header>
             <h1>Panda Diplomacy</h1>
-            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships.</h2>
+            <h2>How the spatial distribution of pandas in captivity showcases China's diplomatic relationships. Loaded!</h2>
             <p id="byline">Nicole Manning Lorino</p>
         </header>
 
@@ -94,7 +94,7 @@
                     </details>
 
                     <!-- Data Credits -->
-                    <details class="credits hidden" id="dataSources">
+                    <details class="panda hidden" id="dataSources">
                         <summary><p class="dataCredits">Data Sources</p></summary>
                         <div id="citations">
                             <p id="sources"></p>
@@ -105,7 +105,7 @@
 
                 <!-- Navigation button return to global view -->
                 <div class="navBtn">
-                    <button type="return" class="panda hidden" id="back">Return</button>
+                    <button type="button" class="panda hidden" id="back">Return</button>
                 </div>
                 
                 <div id="map"></div>
@@ -165,7 +165,6 @@
                     // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked. It ensures that each of the "panda cards" are set to not display so that they get populated correctly later in the code. 
                     document.querySelectorAll('.panda').forEach(div => {
                         div.classList.add('hidden');
-                        div.classList.remove('open');
                     });
                     
                     const clickedZoo = e.features[0].properties.Zoo;    // Creates variable that holds the name of the clicked zoo.
@@ -187,6 +186,7 @@
                         document.getElementById('generalInfo').textContent = matchedZoo.GENERAL_INFO;
 
                         // Populate data credits
+                        document.getElementById('citations').innerHTML = '';
                         for (let j=1; j<=5; j++) {
                             const citation = `CITATION_${j}`;
                             if (matchedZoo[citation]) {
