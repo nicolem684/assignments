@@ -189,8 +189,8 @@
                             const citation = `CITATION_${j}`;
                             if (matchedZoo[citation]) {
                                 const newP = document.createElement("p");
-                                newP.textContent = matchedZoo[citation] + '\n';
-                                document.getElementById('citations').append("newP");
+                                newP.textContent = matchedZoo[citation];
+                                document.getElementById('citations').append(newP);
                             }
                         }
                         // I got help from Joanna to figure out how to pull data in from the json and populate the sidebar.
