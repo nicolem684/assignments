@@ -244,6 +244,7 @@
                             if (matchedZoo[`NAME_${i}`]) {
                                 document.getElementById(`pandaName${i}`).textContent = matchedZoo[`NAME_${i}`];
                                 document.getElementById(`pandaImage${i}`).src = matchedZoo[`IMAGE_${i}`];
+                                document.getElementById(`pandaImage${i}`).alt = matchedZoo[`ALT_${i}`];
                                 // After learning how to create hyperlinks using JS for the code snippet a few lines above, I applied it here too.
                                 document.getElementById(`caption${i}`).innerHTML = `Photo of ${matchedZoo[`NAME_${i}`]}. Photo credit: <a href="${matchedZoo[`IMAGE_CREDIT_${i}`]}" target="_blank">${matchedZoo[`IMAGE_CREDIT_${i}`]}</a>`;
                                 document.getElementById(`pandaGender${i}`).textContent = `Gender: ${matchedZoo[`GENDER_${i}`]}`;
