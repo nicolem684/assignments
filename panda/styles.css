@@ -147,7 +147,7 @@ summary.pandaName {
     align-items: center;
 }
 
-summary::before {
+summary.pandaName::before {
     content: "";
     display: inline-block;
     flex-shrink: 0;
