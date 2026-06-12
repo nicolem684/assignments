@@ -186,6 +186,7 @@ summary.pandaName::before {
     position: relative;
     background-color: #96CC8F;
     color: #000000;
+    padding: 5px;
     cursor: pointer;
     font-family: "Elms Sans", sans-serif;
     text-align: center;
