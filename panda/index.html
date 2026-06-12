@@ -253,8 +253,15 @@
                             const citation = `CITATION_${j}`;
                             if (matchedZoo[citation]) {
                                 // I followed this documentation: https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement 
+                                const text = matchedZoo[citation];
                                 const newP = document.createElement("p");
-                                newP.textContent = matchedZoo[citation];
+
+                                // I got the following line of code with the help of Google Gemini in order to make the link in the citation clickable, without making the entire citation a hyperlink.
+                                // I learned what a capture group variable is through this code. The $1 acts as a placeholder that the code can drop the found url into.
+                                newP.innerHTML = text.replace(
+                                    /(https?:\/\/[^\s]+)/g,
+                                    '<a href="$1" target="_blank">$1</a>'
+                                );
                                 document.getElementById('citations').append(newP);
                             }
                         }
