@@ -100,7 +100,12 @@ header {
     position: relative;
 }
 
+hr.hidden {
+    display: none;
+}
+
 hr {
+    display: block;
     border: none;
     background-color: #317231;
     height: 3px;
