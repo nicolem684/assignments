@@ -185,7 +185,7 @@
                 
                 document.querySelectorAll('.panda').forEach(div => {
                     div.classList.add('hidden');
-                    div.style.display = "none";
+                    div.open = false;
                 });
             })
             
@@ -208,11 +208,13 @@
                     // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked. It ensures that each of the "panda cards" are set to not display so that they get populated correctly later in the code. 
                     document.querySelectorAll('.panda').forEach(div => {
                         div.classList.add('hidden');
+                        div.classList.remove('open');
                     });
 
                     document.querySelectorAll('.line').forEach(hr => {
                         hr.classList.remove('hidden');
                     });
+
                     
                     const clickedZoo = e.features[0].properties.Zoo;    // Creates variable that holds the name of the clicked zoo.
                     console.log('Feature clicked:', clickedZoo);
