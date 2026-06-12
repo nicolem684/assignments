@@ -169,18 +169,24 @@
             });
             map.addControl(nav, 'bottom-right');    // Set in a noticeable place
 
-            // Get user back to global view
-            const returnButton = document.getElementById("back");
-            returnButton.addEventListener('click', () => {
-                map.setZoom(0.8);
-                map.setCenter([10, 0]);
-            })
-
             // In the sidepanel, get user back to global view
             const infoButton = document.getElementById("back");
             infoButton.addEventListener('click', () => {
                 map.setZoom(0.8);
                 map.setCenter([10, 0]);
+
+                document.getElementById('zooName').textContent = "Click on a panda marker to get started!";
+                document.getElementById('country').textContent = "";
+                document.getElementById('generalInfo').innerHTML = "";
+                document.getElementById('citations').innerHTML = "";
+                document.querySelectorAll('.line').forEach(hr => {
+                    hr.classList.add('hidden');
+                });
+                
+                document.querySelectorAll('.panda').forEach(div => {
+                    div.classList.add('hidden');
+                    div.style.display = "none";
+                });
             })
             
             let pandaDataFetch = [];
