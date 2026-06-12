@@ -140,13 +140,13 @@ footer {
     border-radius: 15px;
 }
 
-details {
-  display: inline-block;
+/* I used this tutorial to make the marker inline with the summary title: https://css-tricks.com/two-issues-styling-the-details-element-and-how-to-solve-them/ */
+details summary {
+  cursor: pointer;
 }
 
-summary::before {
-  display: list-item;
-  cursor: pointer;
+details summary > * {
+    display: inline;
 }
 
 .caption {
