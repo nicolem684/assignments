@@ -232,7 +232,7 @@
                             if (matchedZoo[`NAME_${i}`]) {
                                 document.getElementById(`pandaName${i}`).textContent = matchedZoo[`NAME_${i}`];
                                 document.getElementById(`pandaImage${i}`).src = matchedZoo[`IMAGE_${i}`];
-                                document.getElementById(`caption${i}`).textContent = `Photo of ${matchedZoo[`NAME_${i}`]}. Photo credit: ${matchedZoo[`IMAGE_CREDIT_${i}`]}`;
+                                document.getElementById(`caption${i}`).innerHTML = `Photo of ${matchedZoo[`NAME_${i}`]}. Photo credit: <a href="${matchedZoo[`IMAGE_CREDIT_${i}`]}" target="_blank">${matchedZoo[`IMAGE_CREDIT_${i}`]}</a>`;
                                 document.getElementById(`pandaGender${i}`).textContent = `Gender: ${matchedZoo[`GENDER_${i}`]}`;
                                 document.getElementById(`pandaBirthdate${i}`).textContent = `Born: ${matchedZoo[`BORN_${i}`]}`;
                                 document.getElementById(`pandaLoanStart${i}`).textContent = `Loan start: ${matchedZoo[`LOAN_START_${i}`]}`;
