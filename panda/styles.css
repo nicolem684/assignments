@@ -104,9 +104,10 @@ hr {
     border: none;
     background-color: #317231;
     height: 3px;
-    width: 60%;
+    width: 30%;
     border-radius: 1.5px;
-    justify-content: left;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 #generalInfo {
