@@ -35,7 +35,7 @@ body {
 }
 
 header {
-    background-color: pink;
+    background-color: #317231;
     text-align: center;
     justify-content: center;
     margin: 15px auto 25px auto;
@@ -182,8 +182,8 @@ summary::before {
     text-align: center;
     display: inline-block;
     position: relative;
-    height: 5%;
-    background-color: #FFFFFF;
+    height: 10%;
+    background-color: #FBFFF1;
     color: #000000;
     cursor: pointer;
     font-family: "Elms Sans", sans-serif;
