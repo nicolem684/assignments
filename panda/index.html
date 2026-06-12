@@ -201,7 +201,6 @@
                     // I learned this line of code from Google Gemini to make sure the panda div clears each time a new point is clicked. It ensures that each of the "panda cards" are set to not display so that they get populated correctly later in the code. 
                     document.querySelectorAll('.panda').forEach(div => {
                         div.classList.add('hidden');
-                        div.removeAttribute('open');
                     });
                     
                     const clickedZoo = e.features[0].properties.Zoo;    // Creates variable that holds the name of the clicked zoo.
@@ -222,19 +221,6 @@
                         document.getElementById('country').textContent = matchedZoo.COUNTRY;
                         document.getElementById('generalInfo').textContent = matchedZoo.GENERAL_INFO;
 
-                        // Populate data credits
-                        document.getElementById('citations').innerHTML = '';
-                        document.getElementById('dataSources').classList.remove('hidden');
-                        document.getElementById('dataSources').style.display = "block";
-                        for (let j=1; j<=5; j++) {
-                            const citation = `CITATION_${j}`;
-                            if (matchedZoo[citation]) {
-                                // I followed this documentation: https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement 
-                                const newP = document.createElement("p");
-                                newP.textContent = matchedZoo[citation];
-                                document.getElementById('citations').append(newP);
-                            }
-                        }
                         // I got help from Joanna to figure out how to pull data in from the json and populate the sidebar.
                         // I learned how to use template literals in javascript through this website: https://www.geeksforgeeks.org/javascript/javascript-template-literals. I wanted to make the loop dynamic but wasn't sure how to do so in javascript, so this resource helped me understand the syntax. I did use Google Gemini to understand how to use the i variable in the matchedZoo.property const. 
                         for (let i=1; i<=4; i++) {
@@ -248,8 +234,25 @@
                                 document.getElementById(`pandaLoanEnd${i}`).textContent = `Loan end: ${matchedZoo[`LOAN_END_${i}`]}`;
                                 document.getElementById(`panda${i}`).classList.remove('hidden');
                                 document.getElementById(`panda${i}`).style.display = "block";
+                            } else {
+                                document.getElementById(`panda${i}`).classList.add('hidden');
+                                document.getElementById(`panda${i}`).style.display = "block";
+                            }
                         }
-                    }
+                        
+                        // Populate data credits
+                        document.getElementById('citations').innerHTML = '';
+                        document.getElementById('dataSources').classList.remove('hidden');
+                        document.getElementById('dataSources').style.display = "block";
+                        for (let j=1; j<=5; j++) {
+                            const citation = `CITATION_${j}`;
+                            if (matchedZoo[citation]) {
+                                // I followed this documentation: https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement 
+                                const newP = document.createElement("p");
+                                newP.textContent = matchedZoo[citation];
+                                document.getElementById('citations').append(newP);
+                            }
+                        }
                 }
             }});
             }
