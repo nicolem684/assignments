@@ -115,6 +115,10 @@ hr {
     margin-right: auto;
 }
 
+a {
+    color: #317231;
+}
+
 #generalInfo {
     margin: 10px 0px;
 }
@@ -178,8 +182,8 @@ details summary > * {
     border: none;
     display: inline-block;
     position: relative;
-    background-color: #317231;
-    color: #FFFFFF;
+    background-color: #96CC8F;
+    color: #000000;
     padding: 0 15px;
     cursor: pointer;
     font-family: "Elms Sans", sans-serif;
