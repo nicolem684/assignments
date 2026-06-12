@@ -145,7 +145,8 @@ footer {
 }
 
 summary.pandaName {
-    display: none;
+    display: list-item;
+    list-style: none;
 }
 
 summary.pandaName::before {
