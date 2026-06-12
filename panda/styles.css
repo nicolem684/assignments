@@ -176,7 +176,7 @@ summary.pandaName::before {
     top: 15px;
     right: 15px;
     z-index: 1000;
-    height: 10px;
+    height: 10%;
 }
 
 #back {
@@ -186,7 +186,7 @@ summary.pandaName::before {
     position: relative;
     background-color: #96CC8F;
     color: #000000;
-    padding: 5px;
+    padding: 0 15px;
     cursor: pointer;
     font-family: "Elms Sans", sans-serif;
     text-align: center;
