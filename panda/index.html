@@ -144,7 +144,7 @@
                 container: 'map',
                 style: 'mapbox://styles/nman4/cmom1azlf003n01soadh5fl99',
                 center: [10,0],
-                minZoom: 0.5,       // Showing global scale so minZoom is very low so user can see the whole map
+                minZoom: 0.8,       // Showing global scale so minZoom is very low so user can see the whole map
                 maxZoom: 8.5,       // Want user to see which city the zoo is in, but don't need them to see smaller streets, etc
                 maxBounds: bounds,
                 zoom: 0.8
@@ -154,7 +154,7 @@
             const nav = new mapboxgl.NavigationControl({
                 showCompass: false      // Orientation isn't crucial for this map
             });
-            map.addControl(nav, 'bottom-right');    // Set in a noticeable place
+            map.addControl(nav, 'top-right');    // Set in a noticeable place
 
             // In the sidepanel, get user back to global view
             const returnButton = document.getElementById("back");
