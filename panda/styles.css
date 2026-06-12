@@ -136,11 +136,11 @@ footer {
 }
 
 .pandaImage {
-    height: 175px;
+    width: 60%;
     border-radius: 15px;
 }
 
-summary {
+summary.pandaName {
     cursor: pointer;
     list-style: none;
     display: flex;
@@ -182,8 +182,8 @@ summary::before {
     text-align: center;
     display: inline-block;
     position: relative;
-    height: 10%;
-    background-color: #FBFFF1;
+    height: 5%;
+    background-color: #96CC8F;
     color: #000000;
     cursor: pointer;
     font-family: "Elms Sans", sans-serif;
