@@ -140,6 +140,10 @@ footer {
     border-radius: 15px;
 }
 
+.overallSources .dataCredits {
+    display: inline-block;
+}
+
 summary.pandaName {
     display: none;
 }
