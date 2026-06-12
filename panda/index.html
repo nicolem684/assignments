@@ -224,14 +224,21 @@
                         // Populates the data fields in the side panel
                         document.getElementById('zooName').textContent = matchedZoo.ZOO;
                         document.getElementById('country').textContent = matchedZoo.COUNTRY;
-                        document.getElementById('generalInfo').textContent = matchedZoo.GENERAL_INFO;
 
+                        // Searches the text for a url and turns it into a hyperlink within the text blurb. I got the following lines of code with the help of Google Gemini.
+                        // I learned what a capture group variable is through this code. The $1 acts as a placeholder that the code can drop the found url into. 
+                        const generalText = matchedZoo.GENERAL_INFO;
+                        document.getElementById('generalInfo').innerHTML = generalText.replace(
+                            /(https?:\/\/[^\s]+)/g,
+                            '<a href="$1" target="_blank">$1</a>'
+                        );
                         // I got help from Joanna to figure out how to pull data in from the json and populate the sidebar.
                         // I learned how to use template literals in javascript through this website: https://www.geeksforgeeks.org/javascript/javascript-template-literals. I wanted to make the loop dynamic but wasn't sure how to do so in javascript, so this resource helped me understand the syntax. I did use Google Gemini to understand how to use the i variable in the matchedZoo.property const. 
                         for (let i=1; i<=4; i++) {
                             if (matchedZoo[`NAME_${i}`]) {
                                 document.getElementById(`pandaName${i}`).textContent = matchedZoo[`NAME_${i}`];
                                 document.getElementById(`pandaImage${i}`).src = matchedZoo[`IMAGE_${i}`];
+                                // After learning how to create hyperlinks using JS for the code snippet a few lines above, I applied it here too.
                                 document.getElementById(`caption${i}`).innerHTML = `Photo of ${matchedZoo[`NAME_${i}`]}. Photo credit: <a href="${matchedZoo[`IMAGE_CREDIT_${i}`]}" target="_blank">${matchedZoo[`IMAGE_CREDIT_${i}`]}</a>`;
                                 document.getElementById(`pandaGender${i}`).textContent = `Gender: ${matchedZoo[`GENDER_${i}`]}`;
                                 document.getElementById(`pandaBirthdate${i}`).textContent = `Born: ${matchedZoo[`BORN_${i}`]}`;
@@ -256,8 +263,7 @@
                                 const text = matchedZoo[citation];
                                 const newP = document.createElement("p");
 
-                                // I got the following line of code with the help of Google Gemini in order to make the link in the citation clickable, without making the entire citation a hyperlink.
-                                // I learned what a capture group variable is through this code. The $1 acts as a placeholder that the code can drop the found url into.
+                                // After learning how to create hyperlinks using JS for the code snippet a few lines above, I applied it here too.
                                 newP.innerHTML = text.replace(
                                     /(https?:\/\/[^\s]+)/g,
                                     '<a href="$1" target="_blank">$1</a>'
