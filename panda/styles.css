@@ -140,8 +140,13 @@ footer {
     border-radius: 15px;
 }
 
-summary::before {
+details {
   display: inline-block;
+}
+
+summary::before {
+  display: list-item;
+  cursor: pointer;
 }
 
 .caption {
