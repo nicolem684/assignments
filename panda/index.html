@@ -42,6 +42,16 @@
                     <p>
                         China offers loans to countries they wish to establish closer ties and symbolize their friendship with. These loans come with a hefty price, with an average annual fee of $1 million USD for zoos in the US. This payment is mostly meant to support conservation efforts. This number only represents the amount paid to China every year, and does not include money spent on habitat, operations, or program support. Receiving a panda loan thus comes down to a country’s relationship with China and the ability to fund the endeavor. The map below showcases the location of pandas currently living outside China and provides information about the pandas living there. The spatial distribution represents countries with a strong relationship with China and enough wealth to support an investment in pandas. 
                     </p>
+                    <details id="workCited">
+                        <summary id="citations"><p>Sources</p></summary>
+                        <p>Ding, J., & Garcia, E. (2024, August 8). Meet Yun Chuan and Xin Bao, America’s newest giant pandas. AP News. https://apnews.com/article/how-many-pandas-san-diego-zoo-china-f2dd7f98663d61dff1f593f15db85687</p>
+                        <p>Holland, B. (2017, March 16). Panda Diplomacy: The World’s Cutest Ambassadors | HISTORY. HISTORY. https://www.history.com/articles/panda-diplomacy-the-worlds-cutest-ambassadors
+                        </p>
+                        <p>‌Swaisgood, R., Wang, D., & Wei, F. (2019). The IUCN Red List of Threatened Species. IUCN Red List of Threatened Species. https://www.iucnredlist.org/species/712/121745669
+                        </p>
+                        <p>Taylor, M. (2024, February 26). A Brief History of “panda diplomacy” - with New Additions to Global Zoos. Www.bbc.com. https://www.bbc.com/future/article/20240226-a-brief-history-of-panda-diplomacy---with-new-additions-to-global-zoos
+                        </p>
+                    </details>
                 </article>
             </section>
 
@@ -126,6 +136,9 @@
                 <div class="navBtn">
                     <button type="button" id="back">Return</button>
                 </div>
+                <div class="info">
+                    <button type="button" id="info"></button>
+                </div>
             </section>
         </div>
 
@@ -156,9 +169,16 @@
             });
             map.addControl(nav, 'top-right');    // Set in a noticeable place
 
-            // In the sidepanel, get user back to global view
+            // Get user back to global view
             const returnButton = document.getElementById("back");
             returnButton.addEventListener('click', () => {
+                map.setZoom(0.8);
+                map.setCenter([10, 0]);
+            })
+
+            // In the sidepanel, get user back to global view
+            const infoButton = document.getElementById("back");
+            infoButton.addEventListener('click', () => {
                 map.setZoom(0.8);
                 map.setCenter([10, 0]);
             })
