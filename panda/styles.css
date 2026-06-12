@@ -176,13 +176,12 @@ summary.pandaName::before {
     top: 15px;
     right: 15px;
     z-index: 1000;
-   height: 10px;
+    height: 10px;
 }
 
 #back {
     border-radius: 3px;
     border: none;
-    text-align: center;
     display: inline-block;
     position: relative;
     background-color: #96CC8F;
