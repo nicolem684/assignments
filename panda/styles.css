@@ -141,10 +141,7 @@ footer {
 }
 
 summary.pandaName {
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    align-items: center;
+    display: none;
 }
 
 summary.pandaName::before {
