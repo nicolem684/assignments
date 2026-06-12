@@ -159,6 +159,10 @@ details summary > * {
     display: inline;
 }
 
+details.hidden {
+    display: none;
+}
+
 .caption {
     overflow: wrap;
     font-size: 0.7em;
@@ -174,21 +178,20 @@ details summary > * {
     top: 15px;
     right: 15px;
     z-index: 1000;
-    height: 35px;
+    height: 30px;
 }
 
 #back {
-    border-radius: 5px;
+    border-radius: 3px;
     border: none;
     display: inline-block;
     position: relative;
-    background-color: #317231;
-    color: #FFFFFF;
+    background-color: #96CC8F;
+    color: #000000;
     padding: 0 15px;
     cursor: pointer;
     font-family: "Elms Sans", sans-serif;
     text-align: center;
-    font-size: 1em;
 }
 
 
